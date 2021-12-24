@@ -16,7 +16,15 @@
     <div class="main">
       <div class="container">
         <div class="big-div">
-          <div class="jeremy">Report for Jeremy Robson</div>
+          <div class="jeremy">
+            <div class="image-container">
+              <img src="./images/image-jeremy.png"/>
+            </div>
+              <div class="report">
+                <p class="report-for">Report for</p>
+                <span class="jeremy-robson">Jeremy <br> Robson</span>
+              </div>
+          </div>
           <div class="menu">
             <button type="button" id="buttons" class="daily-button">Daily </button>
             <button type="button" id="buttons" class="weekly-button">Weekly</button> 
@@ -29,61 +37,70 @@
             <!-- work card -->
           <div class="first">
             <div class="stats">
-              <div class="work">Work</div>
+              <div id="type" class="work">
+                <span class="headings">Work</span>
+                <img class="ellipsis" src="images/icon-ellipsis.svg"/>
+              </div>
               <div class="daily">
                 <!-- daily -->
-                <p>5hrs</p>
-                <span>Previous - 7hrs</span>
+                <p class="current">5hrs</p>
+                <span class="past">Yesterday - 7hrs</span>
               </div>
               <div class="weekly">
                 <!-- weekly -->
-                <p>32hrs</p>
-                <span> Previous - 36hrs </span>
+                <p class="current">32hrs</p>
+                <span class="past"> Last Week - 36hrs </span>
               </div>
               <!-- monthly -->
-              <p>103hrs</p>
-              <span>Previous - 128hrs</span>
+              <div class="monthly">
+              <p class="current">103hrs</p>
+              <span class="past">Last Month - 128hrs</span>
+              </div>
             </div>
           </div>
            <!-- play card -->
           <div class="second">
             <div class="stats">
-              <div class="play">Play</div>
+              <div id="type" class="play">
+                <span class="headings">Play</span>
+                <img class="ellipsis" src="images/icon-ellipsis.svg"/></div>
               <div class="daily">
                 <!-- daily -->
-                <p>1hr</p>
-                <span>Previous - 2hrs</span>
+                <p class="current">1hr</p>
+                <span class="past">Yesterday - 2hrs</span>
               </div>
               <div class="weekly">
                 <!-- weekly -->
-                <p>10hrs</p>
-                <span>Previous - 8hrs</span>
+                <p class="current">10hrs</p>
+                <span class="past">Last Week - 8hrs</span>
               </div>
               <!-- monthly -->
               <div class="monthly">
-                <p>23hrs</p>
-                <span>Previous - 29hrs</span>
+                <p class="current">23hrs</p>
+                <span class="past">Last Month - 29hrs</span>
               </div>
             </div>
           </div>
             <!-- study card -->
           <div class="third">
             <div class="stats">
-              <div class="study">Study</div>
+              <div id="type" class="study">
+                <span class="headings">Study</span>
+                <img class="ellipsis" src="images/icon-ellipsis.svg"/></div>
               <div class="daily">
                 <!-- daily -->
-                <p>0hrs</p>
-                <span>Previous - 1hr</span>
+                <p class="current">0hrs</p>
+                <span class="past">Yesterday - 1hr</span>
               </div>
               <div class="weekly">
                 <!-- weekly -->
-                <p> 4hrs</p>
-                <span>Previous - 7hrs</span> 
+                <p class="current"> 4hrs</p>
+                <span class="past">Last Week - 7hrs</span> 
               </div>
               <div class="monthly">
                <!-- monthly -->
-                <p>13hrs</p>
-                <span> Previous - 19hrs </span>
+                <p class="current">13hrs</p>
+                <span class="past"> Last Month - 19hrs </span>
                 </div>
               </div>
             </div>
@@ -93,63 +110,66 @@
             <!-- exercise card -->
           <div class="fourth">
             <div class="stats">
-              <div class="exercise">Exercise</div>
+              <div id="type" class="exercise"><span class="headings">Exercise</span>
+                <img class="ellipsis" src="images/icon-ellipsis.svg"/></div>
               <div class="daily">
                   <!-- daily -->
-                  <p>1hr</p>
-                  <span> Previous - 1hr</span>
+                  <p class="current">1hr</p>
+                  <span class="past"> Yesterday - 1hr</span>
               </div>
               <div class="weekly">
                   <!-- weekly -->
-                  <p>4hrs</p>
-                  <span>Previous - 5hrs</span>
+                  <p class="current">4hrs</p>
+                  <span class="past">Last Week - 5hrs</span>
               </div>
               <div class="monthly">
                 <!-- monthly -->
-                 <p>11hrs</p>
-                 <span>Previous - 18hrs</span>
+                 <p class="current">11hrs</p>
+                 <span class="past">Last Month - 18hrs</span>
               </div>
             </div>
           </div>
           <!-- social card-->
           <div class="fifth">
             <div class="stats">
-              <div class="social">Social</div>
+              <div id="type" class="social"><span class="headings">Social</span>
+                <img class="ellipsis" src="images/icon-ellipsis.svg"/></div>
               <div class="daily">
                 <!-- daily -->
-                <p>1hr</p>
-                <span>Previous - 3hrs</span>
+                <p class="current">1hr</p>
+                <span class="past">Yesterday - 3hrs</span>
               </div>
               <div class="weekly">
                  <!-- weekly -->
-                  <p>5hrs</p>
-                  <span>Previous - 10hrs</span>
+                  <p class="current">5hrs</p>
+                  <span class="past">Last Week - 10hrs</span>
               </div>
               <div class="monthly">
                   <!-- monthly -->
-                  <p>21hrs</p>
-                  <span>Previous - 23hrs</span>
+                  <p class="current">21hrs</p>
+                  <span class="past">Last Month - 23hrs</span>
               </div>
             </div>
           </div>
           <!-- social card-->
           <div class="sixth">
             <div class="stats">
-              <div class="self-care">Self Care</div>
+              <div id="type" class="self-care"><span class="headings">Self Care</span>
+                <img class="ellipsis" src="images/icon-ellipsis.svg"/></div>
               <div class="daily">
                   <!-- daily -->
-                 <p>0hrs</p>     
-                 <span>Previous - 1hr</span>
+                 <p class="current">0hrs</p>     
+                 <span class="past">Yesterday - 1hr</span>
               </div>
                   <div class="weekly">
                   <!-- weekly -->
-                 <p>2hrs</p>
-                 <span>Previous - 2hrs</span>
+                 <p class="current">2hrs</p>
+                 <span class="past">Last Week - 2hrs</span>
               </div>
               <div class="monthly">
                  <!-- monthly -->
-                <p>7hrs</p>
-                <span>Previous - 11hrs</span>
+                <p class="current">7hrs</p>
+                <span class="past">Last Month - 11hrs</span>
               </div>
             </div>
           

@@ -43,7 +43,6 @@
   height: 60%;
   width: 80%;
 }
-
 /* First card */
 .big-div {
   height: 100%;
@@ -221,13 +220,7 @@
   margin-top: 0.5rem;
 }
 .weekly{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 50%;
-  width: 100%;  
-  text-align: left;
-  margin-left: 1.5rem;
+  display: none;
 }
 .daily{
   display: none;

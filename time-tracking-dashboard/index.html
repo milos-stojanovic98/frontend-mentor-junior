@@ -1,112 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Time tracking dashboard</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="main">
-    <div class="container"> 
-      <div class="big-div">
-        <div class="jeremy">
-          Report for
-          Jeremy Robson
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Time tracking dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="big-div">
+          <div class="jeremy">Report for Jeremy Robson</div>
+          <div class="menu">
+            <button class="daily-button">Daily </button>
+            <button class="weekly-button">Weekly</button> 
+            <button class="monthly-button">Monthly</button>
+          </div>
         </div>
-        <div class="menu">
-          Daily
-          Weekly
-          Monthly
-        </div>
-      </div>  
 
-      <section class="top-row">
-        <div class="first">
-          <div class="stats">
-            <div class="work">
-              Work
+        <section class="top-row">
+            <!-- work card -->
+          <div class="first">
+            <div class="stats">
+              <div class="work">Work</div>
+              <div class="daily">
+                <!-- daily -->
+                <p>5hrs</p>
+                <span>Previous - 7hrs</span>
+              </div>
+              <div class="weekly">
+                <!-- weekly -->
+                <p>32hrs</p>
+                <span> Previous - 36hrs </span>
+              </div>
+              <!-- monthly -->
+              <p>103hrs</p>
+              <span>Previous - 128hrs</span>
             </div>
-            5hrs <!-- daily -->
-            Previous - 7hrs <!-- daily -->
-            32hrs <!-- weekly -->
-            Previous - 36hrs <!-- weekly -->
-            103hrs <!-- monthly -->
-            Previous - 128hrs <!-- monthly -->
           </div>
-        </div>
-        <div class="second">
-          <div class="stats">
-            <div class="play">
-              Play
+           <!-- play card -->
+          <div class="second">
+            <div class="stats">
+              <div class="play">Play</div>
+              <div class="daily">
+                <!-- daily -->
+                <p>1hr</p>
+                <span>Previous - 2hrs</span>
+              </div>
+              <div class="weekly">
+                <!-- weekly -->
+                <p>10hrs</p>
+                <span>Previous - 8hrs</span>
+              </div>
+              <!-- monthly -->
+              <div class="monthly">
+                <p>23hrs</p>
+                <span>Previous - 29hrs</span>
+              </div>
             </div>
-            1hr <!-- daily -->
-            Previous - 2hrs <!-- daily -->
-            10hrs <!-- weekly -->
-            Previous - 8hrs <!-- weekly -->
-            23hrs <!-- monthly -->
-            Previous - 29hrs <!-- monthly -->
           </div>
-        </div>
-        <div class="third">
-          <div class="stats">
-            <div class="study">
-              Study
+            <!-- study card -->
+          <div class="third">
+            <div class="stats">
+              <div class="study">Study</div>
+              <div class="daily">
+                <!-- daily -->
+                <p>0hrs</p>
+                <span>Previous - 1hr</span>
+              </div>
+              <div class="weekly">
+                <!-- weekly -->
+                <p> 4hrs</p>
+                <span>Previous - 7hrs</span> 
+              </div>
+              <div class="monthly">
+               <!-- monthly -->
+                <p>13hrs</p>
+                <span> Previous - 19hrs </span>
+                </div>
+              </div>
             </div>
-            0hrs <!-- daily -->
-            Previous - 1hr <!-- daily -->
-            4hrs <!-- weekly -->
-            Previous - 7hrs <!-- weekly -->
-            13hrs <!-- monthly -->
-            Previous - 19hrs <!-- monthly -->
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="bottom-row">
-        <div class="fourth">
-          <div class="stats">
-            <div class="exercise">
-              Exercise
+        <section class="bottom-row">
+            <!-- exercise card -->
+          <div class="fourth">
+            <div class="stats">
+              <div class="exercise">Exercise</div>
+              <div class="daily">
+                  <!-- daily -->
+                  <p>1hr</p>
+                  <span> Previous - 1hr</span>
+              </div>
+              <div class="weekly">
+                  <!-- weekly -->
+                  <p>4hrs</p>
+                  <span>Previous - 5hrs</span>
+              </div>
+              <div class="monthly">
+                <!-- monthly -->
+                 <p>11hrs</p>
+                 <span>Previous - 18hrs</span>
+              </div>
             </div>
-            1hr <!-- daily -->
-            Previous - 1hr <!-- daily -->
-            4hrs <!-- weekly -->
-            Previous - 5hrs <!-- weekly -->
-            11hrs <!-- monthly -->
-            Previous - 18hrs <!-- monthly -->
           </div>
-        </div>
-        <div class="fifth">
-          <div class="stats">
-            <div class="social">
-              Social
+          <!-- social card-->
+          <div class="fifth">
+            <div class="stats">
+              <div class="social">Social</div>
+              <div class="daily">
+                <!-- daily -->
+                <p>1hr</p>
+                <span>Previous - 3hrs</span>
+              </div>
+              <div class="weekly">
+                 <!-- weekly -->
+                  <p>5hrs</p>
+                  <span>Previous - 10hrs</span>
+              </div>
+              <div class="monthly">
+                  <!-- monthly -->
+                  <p>21hrs</p>
+                  <span>Previous - 23hrs</span>
+              </div>
             </div>
-            1hr <!-- daily -->
-            Previous - 3hrs <!-- daily -->
-            5hrs <!-- weekly -->
-            Previous - 10hrs <!-- weekly -->
-            21hrs <!-- monthly -->
-            Previous - 23hrs <!-- monthly -->
           </div>
-        </div>
-        <div class="sixth">
-          <div class="stats">
-            <div class="self-care">
-              Self Care
+          <!-- social card-->
+          <div class="sixth">
+            <div class="stats">
+              <div class="self-care">Self Care</div>
+              <div class="daily">
+                  <!-- daily -->
+                 <p>0hrs</p>     
+                 <span>Previous - 1hr</span>
+              </div>
+                  <div class="weekly">
+                  <!-- weekly -->
+                 <p>2hrs</p>
+                 <span>Previous - 2hrs</span>
+              </div>
+              <div class="monthly">
+                 <!-- monthly -->
+                <p>7hrs</p>
+                <span>Previous - 11hrs</span>
+              </div>
             </div>
-            0hrs <!-- daily -->
-            Previous - 1hr <!-- daily -->
-            2hrs <!-- weekly -->
-            Previous - 2hrs <!-- weekly -->
-            7hrs <!-- monthly -->
-            Previous - 11hrs <!-- monthly -->
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
-  </div>
-  <script src="app.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>

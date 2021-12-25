@@ -13,10 +13,11 @@
       <img src="images/logo.svg"/>
       <div class="container">
         <section class="left-section">
+          <div class="left-side-container">
           <!-- bill-->
           <div class="bill">
-            <span class="bill">Bill</span> 
-            <input class="input-bill" type="number" name="bill"/>
+            <span class="bill-span">Bill</span> 
+            <input class="input-field" id="input-bill" type="number"/>
           </div>
           <!-- select -->
           <div class="select-tip">
@@ -37,12 +38,14 @@
           <!-- num of people -->
           <div class="number-of-people">
             <span class="people-num">Number of People</span>
-            <input class="input-num" type="number" name="number"/>
+            <input id="number-of-people" class="input-field"  type="number"/>
+          </div>
           </div>
         </section>
         
         <section class="right-section">
-          <div class="tip">
+          <div class="right-side-container">
+            <div class="tip">
             <div class="tip-amount">
               <p>Tip Amount
               <br>/ person</p>
@@ -60,6 +63,7 @@
           <!-- reset btn -->
           <div class="reset-div">
             <button type="button" class="reset">Reset </button> 
+            </div>
           </div>
         </section>
       </div>

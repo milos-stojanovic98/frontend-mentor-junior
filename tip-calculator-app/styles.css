@@ -6,19 +6,110 @@
 
     /* Neutral */
     --very-dark-cyan: hsl(183, 100%, 15%);
-    --dark-grayish-cyan: hsl(186, 14%, 43%);
-    --dark-grayish-cyan: hsl(184, 14%, 56%);
-    --light-grayish-cyan: hsl(185, 41%, 84%);
-    --light-grayish-cyan: hsl(189, 41%, 97%);
+    --dark-grayish-cyan1: hsl(186, 14%, 43%);
+    --dark-grayish-cyan2: hsl(184, 14%, 56%);
+    --light-grayish-cyan1: hsl(185, 41%, 84%);
+    --light-grayish-cyan2: hsl(189, 41%, 97%);
     --white: hsl(0, 0%, 100%);
     
     /* fonts */
     --form-inputs: 24px;
-    --main-font: "Space Mono";
-
+    --main-font: "Space Mono";  
+}
     /* Resets */
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: var(--main-font);
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-grayish-cyan1);
+}
+.main img{
+    padding-bottom: 4rem;
+}
+.container{
+    height: 50%;
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    border-radius: 1rem;
+}
+.left-section{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+.left-side-container{
+    padding-left: 2.5rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    border: 1px solid black
+}
+.right-section{
+    width: 50%;
+    height: 100%;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.right-side-container{
+    height: 88%;
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--very-dark-cyan);
+    border-radius: 1rem;
+}
+/* content styles */ 
+.bill{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0rem;
+}
+.bill-span{
+    color: var(--dark-grayish-cyan1);
+    font-weight: 700;
+}
+.input-field{
+    width: 22rem;
+    height: 2rem;
+    border: none;
+    background: url("./images/icon-dollar.svg") no-repeat scroll 7px 7px;
+    background-color: var(--light-grayish-cyan2);
+    text-align: right;
+    color: var(--very-dark-cyan);
+    font-size: var(--form-inputs);
+    font-weight: 700;
+}
+/* select tip */
+.fields{
+    display: flex;
+    flex-direction: column;
+}
+.first-row{
+    display: flex;
+    flex-direction: row;
+}
+.second-row{
+    display: flex;
+    flex-direction: row;
 }

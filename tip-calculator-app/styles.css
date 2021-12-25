@@ -94,9 +94,21 @@
 }
 #input-bill{
     background: url("./images/icon-dollar.svg") no-repeat scroll 7px 7px;
+    cursor: pointer;
+    outline: none;
+}
+#input-bill:hover{
+    border: 3px solid var(--strong-cyan);
+    border-radius: 0.4rem;
 }
 #number-of-people{
     background: url("./images/icon-person.svg") no-repeat scroll 7px 7px;
+    cursor: pointer;
+    outline: none;
+}
+#number-of-people:hover{
+    border: 3px solid var(--strong-cyan);
+    border-radius: 0.4rem;
 }
 .input-field{
     width: 22rem;
@@ -143,25 +155,39 @@
     border: none;
     font-size: 1.3rem;
     font-weight: 600;
+    cursor: pointer;
+}
+.buttons:hover{
+    background-color: var(--strong-cyan);
+    color: var(--very-dark-cyan);
+}
+.custom-field{
+    height: 2.8rem;
+    width: 6.8rem;
+    margin: 1rem 1rem 0rem 0rem;
+    border: none;
+    outline: none;
+    color: var(--very-dark-cyan);
+    text-align: right;
+}
+.custom-field::placeholder{
+    text-align: right;
+    text-transform: capitalize;  
 }
 #custom{
     background-color: var(--light-grayish-cyan2);
-    color: var(--dark-grayish-cyan1);
     font-size: 1.3rem;
     font-weight: 700;
 }
-#fifteen{
-    background-color: var(--strong-cyan);
-    color: var(--very-dark-cyan);
-    font-size: 1.3rem;
-    font-weight: 600;
+#custom:hover{
+    border: 3px solid var(--strong-cyan);
+    border-radius: 0.4rem;
 }
 .people-num {
     color: var(--dark-grayish-cyan1);
     font-weight: 700;
 }
 /* right side styles */
-
 .tip{
     display: flex;
     flex-direction: row;
@@ -203,10 +229,15 @@
     width: 80%;
     border-radius: 0.4rem;
     color: var(--very-dark-cyan);
-    background-color: var(--strong-cyan);
+    background-color: var(--dark-grayish-cyan1);
     font-size: var(--main-font);
     font-weight: 700;
     text-transform: uppercase;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.reset:hover{
+    background-color: var(--strong-cyan);
 }
 .tip-amount p{
     color: var(--light-grayish-cyan2);
@@ -223,4 +254,29 @@
 .total-person span{
     color: var(--dark-grayish-cyan2);
     font-weight: 700;
+}
+/* Removing arrows from number type input fields */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* when value is picked */
+.active{
+    background-color: var(--strong-cyan);
+    color: var(--very-dark-cyan);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+/* When fields arent empty */
+.reset-active{
+    height: 2.8rem;
+    width: 80%;
+    border-radius: 0.4rem;
+    color: var(--very-dark-cyan);
+    background-color: var(--strong-cyan);
+    font-size: var(--main-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    opacity: 1;
 }

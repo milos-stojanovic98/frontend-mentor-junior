@@ -8,27 +8,62 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="main">
+      <!-- logo-->
+      <img src="images/logo.svg"/>
+      <div class="container">
+        <section class="left-section">
+          <!-- bill-->
+          <div class="bill">
+            <span class="bill">Bill</span> 
+            <input class="input-bill" type="number" name="bill"/>
+          </div>
+          <!-- select -->
+          <div class="select-tip">
+            <span class="select">Select Tip %</span>
+            <div class="fields">
+              <div class="first-row">
+                <button id="buttons" class="5percent" type="button">5%</button>
+                <button id="buttons"  class="10percent" type="button">10%</button>
+                <button id="buttons"  class="15percent" type="button">15%</button>
+              </div>
+              <div class="second-row">
+                <button id="buttons"  class="25percent" type="button">25%</button>
+                <button id="buttons" class="50percent" type="button">50%</button>
+                <button id="buttons" class="custom" type="button">Custom </button>
+              </div>
+            </div> 
+          </div>
+          <!-- num of people -->
+          <div class="number-of-people">
+            <span class="people-num">Number of People</span>
+            <input class="input-num" type="number" name="number"/>
+          </div>
+        </section>
+        
+        <section class="right-section">
+          <div class="tip">
+            <div class="tip-amount">
+              <p>Tip Amount
+              <br>/ person</p>
+            </div>
+            <p class="amount-sum">$4.27</p>
+          </div>  
 
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-    <script src="app.js"></script>
+          <div class="total">
+            <div class="total-person">
+              <p>Total
+              <br> / person </p>
+            </div>   
+            <p class="total-sum">$32.79</p>
+          </div>
+          <!-- reset btn -->
+          <div class="reset-div">
+            <button type="button" class="reset">Reset </button> 
+          </div>
+        </section>
+      </div>
+    </div>
+  <script src="app.js"></script>
 </body>
 </html>

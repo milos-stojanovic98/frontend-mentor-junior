@@ -171,6 +171,7 @@
     outline: none;
     color: var(--very-dark-cyan);
     text-align: right;
+    cursor: pointer;
 }
 .custom-field::placeholder{
     text-align: right;

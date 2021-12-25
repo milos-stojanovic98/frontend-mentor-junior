@@ -96,6 +96,7 @@
     background: url("./images/icon-dollar.svg") no-repeat scroll 7px 7px;
     cursor: pointer;
     outline: none;
+    background-color: var(--light-grayish-cyan2);
 }
 #input-bill:hover{
     border: 3px solid var(--strong-cyan);
@@ -105,6 +106,7 @@
     background: url("./images/icon-person.svg") no-repeat scroll 7px 7px;
     cursor: pointer;
     outline: none;
+    background-color: var(--light-grayish-cyan2);
 }
 #number-of-people:hover{
     border: 3px solid var(--strong-cyan);

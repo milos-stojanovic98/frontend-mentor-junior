@@ -27,7 +27,7 @@ inputBill.addEventListener("change", liveChange = () =>{
                 resetBtn.classList.add("reset-active");
                 setTimeout(()=>{
                     item.target.style.background = "hsl(183, 100%, 15%)";
-                }, 5000)
+                }, 3000)
             });
         })   
     })

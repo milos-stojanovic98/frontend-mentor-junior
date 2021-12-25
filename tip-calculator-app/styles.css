@@ -283,3 +283,6 @@ input::-webkit-inner-spin-button {
     text-transform: uppercase;
     opacity: 1;
 }
+.bgr{
+    background-color: var(--very-dark-cyan);
+}

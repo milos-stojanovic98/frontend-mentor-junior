@@ -59,8 +59,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: flex-start;
-    
+    align-items: flex-start; 
 }
 .right-section{
     width: 50%;
@@ -141,7 +140,6 @@
 .first-row{
     display: flex;
     flex-direction: row;
-  
 }
 .second-row{
     display: flex;
@@ -285,4 +283,66 @@ input::-webkit-inner-spin-button {
 }
 .bgr{
     background-color: var(--very-dark-cyan);
+}
+@media only screen and (max-width: 375px){
+    .main{
+        height: 130vh;
+        width: 100vw;
+    }
+    .main img{
+        margin-top: 6rem;
+        padding-top: 3rem;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }    
+    .bill{
+        margin-top: 2rem;
+    }
+    #input-bill{
+        width: 18.5rem;
+        margin-bottom: 2rem;
+    }
+    #number-of-people{
+        width: 18.5rem;
+        margin-bottom: 1rem;
+    }
+    .buttons{
+        width: 6rem;
+    }
+    #custom{
+        width: 6rem;
+    }
+    .select-tip{
+        width: 5.5rem;
+        margin-bottom: 2rem;
+    }
+    .left-side-container{
+        padding-left: 1.5rem;
+    }
+    .right-side-container{
+        padding-top: 2rem;
+    }
+   .right-section{
+       width: 100%;
+   }
+   .reset{
+       margin-top: 3rem;
+   }
+   .total-sum{
+       font-size: 2rem;
+   }
+   .amount-sum{
+       font-size: 2rem;
+   }
+   #responsive{
+       font-weight: 600;
+   }
+       
+   
 }

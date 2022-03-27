@@ -43,16 +43,17 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 35vh;
+  height: 45vh;
   width: 40vw;
 }
 .center {
   height: 50%;
-  width: 100%;
+  width: 80%;
 }
 .quote {
   text-align: center;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
+
   word-wrap: break-word;
 }
 .header-div {
@@ -121,5 +122,9 @@ body {
   }
   .footer-div {
     margin: 0;
+  }
+  .center {
+    min-height: 20vh;
+    width: 90%;
   }
 }

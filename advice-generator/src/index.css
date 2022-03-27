@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+:root {
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+
+  --quote: 28px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope";
+}
+body {
+  background-color: var(--dark-blue);
+}
+.title {
+  color: var(--neon-green);
+  letter-spacing: 3px;
+}
+.quote {
+  font-size: var(--quote);
+  color: var(--light-cyan);
+}
+.all {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.container {
+  background-color: var(--dark-grayish-blue);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+  width: 40vw;
+}
+.center {
+  height: 50%;
+  width: 100%;
+}
+.quote {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.header-div {
+  height: 25%;
+  width: 100%;
+}
+.title {
+  margin-top: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.footer-div {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+.divider {
+  width: 80%;
+}
+.dice-div {
+  border-radius: 50%;
+  background-color: var(--neon-green);
+  height: 3.3rem;
+  width: 3.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.dice-div:hover {
+  box-shadow: 0 0 25px 0px var(--neon-green);
+}
+.kockica {
+  height: 1.3rem;
+  width: 1.3rem;
+}

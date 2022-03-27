@@ -53,6 +53,7 @@ body {
 .quote {
   text-align: center;
   margin-top: 0.5rem;
+  word-wrap: break-word;
 }
 .header-div {
   height: 25%;
@@ -92,4 +93,33 @@ body {
 .kockica {
   height: 1.3rem;
   width: 1.3rem;
+}
+@media only screen and (max-width: 375px) {
+  .all {
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 40vh;
+  }
+  .title {
+    font-size: 0.8rem;
+  }
+  .quote {
+    font-size: 1.5rem;
+  }
+  .divider {
+    height: 1rem;
+    margin-top: 0.5rem;
+  }
+  .footer-div {
+    margin: 0;
+  }
 }

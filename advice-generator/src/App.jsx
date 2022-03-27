@@ -1,18 +1,34 @@
 import "./index.css";
+import { useEffect, useState } from "react";
 
 const App = () => {
+  const [text, setText] = useState([]);
+  const [id, setId] = useState();
+
+  const fetchData = async () => {
+    const request = await fetch("https://api.adviceslip.com/advice");
+    const response = await request.json();
+    const data = response.slip.advice;
+    const id = response.slip.id;
+    setId(id);
+    setText(data);
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   return (
     <div className="all">
       <div className="container">
         <div className="header-div">
-          <p className="title"> Advice #117 </p>
+          <p className="title">
+            {" "}
+            Advice #<span>{id}</span>{" "}
+          </p>
         </div>
         <div className="center">
-          <p className="quote">
-            {" "}
-            "It's easy to sit up and take <br></br> notice, what's difficult is
-            getting <br></br> up and taking action."
-          </p>
+          <p className="quote">{text}</p>
         </div>
         <div className="footer-div">
           <img

@@ -13,11 +13,9 @@ const App = () => {
     setId(id);
     setText(data);
   };
-
   useEffect(() => {
     fetchData();
-  }, []);
-
+  });
   return (
     <div className="all">
       <div className="container">
@@ -39,7 +37,12 @@ const App = () => {
         </div>
       </div>
       <div className="dice-div">
-        <img className="kockica" src="/images/icon-dice.svg" alt="kockica" />
+        <img
+          className="kockica"
+          src="/images/icon-dice.svg"
+          alt="kockica"
+          onClick={() => fetchData()}
+        />
       </div>
     </div>
   );

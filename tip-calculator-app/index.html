@@ -1,73 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Tip calculator app</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="main">
-      <!-- logo-->
-      <img src="images/logo.svg"/>
-      <div class="container">
-        <section class="left-section">
-          <div class="left-side-container">
-          <!-- bill-->
-          <div class="bill">
-            <span class="bill-span">Bill</span> 
-            <input class="input-field" id="input-bill" placeholder="0" type="number"/>
-          </div>
-          <!-- select -->
-          <div class="select-tip">
-            <span class="select">Select Tip %</span>
-            <div class="fields">
-              <div class="first-row">
-                <button class="buttons" id="five" type="button">5%</button>
-                <button class="buttons"  id="ten" type="button">10%</button>
-                <button class="buttons"  id="fifteen" type="button">15%</button>
-              </div>
-              <div class="second-row">
-                <button class="buttons" id="twenty-five" type="button">25%</button>
-                <button class="buttons" id="fifty" type="button">50%</button>
-                <input class="custom-field" id="custom" placeholder="custom" type="number"></input>
-              </div>
-            </div> 
-          </div>
-          <!-- num of people -->
-          <div class="number-of-people">
-            <span class="people-num">Number of People</span>
-            <input id="number-of-people" class="input-field" placeholder="0" type="number"/>
-          </div>
-          </div>
-        </section>
-        
-        <section class="right-section">
-          <div class="right-side-container">  
-            <div class="tip">
-              <div class="tip-amount">
-                <p id="responsive">Tip Amount <br>
-                <span id="responsive">/ person</span> </p>
-              </div>
-                <p class="amount-sum">$0.00</p>
-            </div>  
-
-          <div class="total">
-            <div class="total-person">
-              <p id="responsive">Total <br>
-             <span id="responsive"> / person</span> </p>
-            </div>   
-            <p class="total-sum">$0.00</p>
-          </div>
-            <!-- reset btn -->
-            <div class="reset-div">
-              <button type="button" class="reset">Reset</button> 
-            </div>
-          </div>
-        </section>
-      </div>
-    </div>
-  <script src="app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip calculator</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

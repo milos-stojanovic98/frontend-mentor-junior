@@ -2,31 +2,30 @@ import "./index.css";
 import { useEffect, useState } from "react";
 
 const App = () => {
-  const [text, setText] = useState([]);
-  const [id, setId] = useState();
+  const [advices, setAdvices] = useState({ advice: "", id: "" });
+  const [fetching, setFetching] = useState(false);
 
-  const fetchData = async () => {
-    const request = await fetch("https://api.adviceslip.com/advice");
-    const response = await request.json();
-    const data = response.slip.advice;
-    const id = response.slip.id;
-    setId(id);
-    setText(data);
-  };
   useEffect(() => {
+    const fetchData = async () => {
+      const request = await fetch("https://api.adviceslip.com/advice");
+      const response = await request.json();
+      const advice = response.slip.advice;
+      const id = response.slip.id;
+      setAdvices({ advice, id });
+    };
     fetchData();
-  });
+  }, [fetching]);
   return (
     <div className="all">
       <div className="container">
         <div className="header-div">
           <p className="title">
             {" "}
-            Advice #<span>{id}</span>{" "}
+            Advice #<span>{advices.id}</span>{" "}
           </p>
         </div>
         <div className="center">
-          <p className="quote">{text}</p>
+          <p className="quote">{advices.advice}</p>
         </div>
         <div className="footer-div">
           <img
@@ -41,7 +40,7 @@ const App = () => {
           className="kockica"
           src="/images/icon-dice.svg"
           alt="kockica"
-          onClick={() => fetchData()}
+          onClick={() => setFetching(!fetching)}
         />
       </div>
     </div>

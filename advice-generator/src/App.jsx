@@ -1,17 +1,25 @@
-import "./index.css";
 import { useEffect, useState } from "react";
+import axios from "axios";
+import "./index.css";
 
 const App = () => {
   const [advices, setAdvices] = useState({ advice: "", id: "" });
   const [fetching, setFetching] = useState(false);
-
+  const url = "https://api.adviceslip.com/advice";
   useEffect(() => {
     const fetchData = async () => {
-      const request = await fetch("https://api.adviceslip.com/advice");
-      const response = await request.json();
-      const advice = response.slip.advice;
-      const id = response.slip.id;
-      setAdvices({ advice, id });
+      try {
+        const response = await axios(url, {
+          headers: {
+            Accept: "application/json",
+          },
+        });
+        const advice = response.data.slip.advice;
+        const id = response.data.slip.id;
+        setAdvices({ advice, id });
+      } catch (error) {
+        console.log(error.response);
+      }
     };
     fetchData();
   }, [fetching]);

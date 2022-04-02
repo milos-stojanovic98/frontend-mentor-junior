@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
-import buttonsList from "./buttonsList";
+import buttonsList from "./data/buttonsList";
 import "./index.css";
+import { useGlobalContext } from "./context";
 
 const App = () => {
   const [inputBill, setInputBill] = useState("");
@@ -10,7 +11,7 @@ const App = () => {
     totalSum: "0.00",
     amountSum: "0.00",
   });
-  const [isResetActive, setIsResetActive] = useState(false);
+  const { isResetActive, setIsResetActive } = useGlobalContext();
 
   const [selected, setSelected] = useState(0);
   const handleActive = (button) => {

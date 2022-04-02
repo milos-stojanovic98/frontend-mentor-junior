@@ -140,6 +140,7 @@
 .first-row {
   display: flex;
   flex-direction: row;
+  flex-flow: row wrap;
 }
 .second-row {
   display: flex;

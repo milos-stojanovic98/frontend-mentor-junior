@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
+import buttonsList from "./buttonsList";
 import "./index.css";
 
-function App() {
+const App = () => {
   const [inputBill, setInputBill] = useState("");
   const [numberOfPeople, setNumberOfPeople] = useState("");
   const [inputValues, setInputValues] = useState("");
@@ -10,6 +11,12 @@ function App() {
     amountSum: "0.00",
   });
 
+  const [selected, setSelected] = useState(0);
+  const handleActive = (button) => {
+    setSelected(button.id);
+    const parsedValues = parseFloat(button.value);
+    setInputValues(parsedValues);
+  };
   const calculate = () => {
     const parsedInputBill = parseFloat(inputBill);
     const percentage = (parsedInputBill * inputValues) / 100;
@@ -24,23 +31,19 @@ function App() {
     });
   };
 
-  const handleInputValues = (e) => {
-    e.preventDefault();
-    const parsedValues = parseFloat(e.target.value);
-    setInputValues(parsedValues);
-  };
-  const reset = (e) => {
-    e.preventDefault();
-    setInputBill("");
-    setNumberOfPeople("");
-  };
-
   useEffect(() => {
     if (inputBill && numberOfPeople && inputValues) {
       calculate();
     }
   }, [numberOfPeople, inputValues, inputBill]);
 
+  const reset = (e) => {
+    e.preventDefault();
+    setInputBill("");
+    setNumberOfPeople("");
+    setTotalSums({ totalSum: "0.00", amountSum: "0.00" });
+    setSelected(0);
+  };
   return (
     <div className="main">
       <img src="./images/logo.svg" />
@@ -63,48 +66,20 @@ function App() {
               <span className="select">Select Tip %</span>
               <div className="fields">
                 <div className="first-row">
-                  <button
-                    className="buttons"
-                    onClick={(e) => handleInputValues(e)}
-                    value="5"
-                    type="button"
-                  >
-                    5%
-                  </button>
-                  <button
-                    className="buttons"
-                    onClick={(e) => handleInputValues(e)}
-                    value="10"
-                    type="button"
-                  >
-                    10%
-                  </button>
-                  <button
-                    className="buttons"
-                    onClick={(e) => handleInputValues(e)}
-                    value="15"
-                    type="button"
-                  >
-                    15%
-                  </button>
-                </div>
-                <div className="second-row">
-                  <button
-                    className="buttons"
-                    onClick={(e) => handleInputValues(e)}
-                    value="25"
-                    type="button"
-                  >
-                    25%
-                  </button>
-                  <button
-                    className="buttons"
-                    onClick={(e) => handleInputValues(e)}
-                    value="50"
-                    type="button"
-                  >
-                    50%
-                  </button>
+                  {buttonsList.map((button) => {
+                    return (
+                      <button
+                        className={
+                          button.id === selected ? "buttons-active" : "buttons"
+                        }
+                        type="button"
+                        key={button.id}
+                        onClick={() => handleActive(button)}
+                      >
+                        {button.title}
+                      </button>
+                    );
+                  })}
                   <input
                     className="custom-field"
                     id="custom"
@@ -164,6 +139,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;

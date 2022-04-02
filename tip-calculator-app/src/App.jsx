@@ -1,6 +1,6 @@
-import buttonsList from "./data/buttonsList";
-import "./index.css";
+import "./styles/index.css";
 import { useGlobalContext } from "./context";
+import Buttons from "./Buttons";
 
 const App = () => {
   const {
@@ -37,20 +37,7 @@ const App = () => {
               <span className="select">Select Tip %</span>
               <div className="fields">
                 <div className="first-row">
-                  {buttonsList.map((button) => {
-                    return (
-                      <button
-                        className={
-                          button.id === selected ? "buttons-active" : "buttons"
-                        }
-                        type="button"
-                        key={button.id}
-                        onClick={() => handleActive(button)}
-                      >
-                        {button.title}
-                      </button>
-                    );
-                  })}
+                  <Buttons selected={selected} handleActive={handleActive} />
                   <input
                     className="custom-field"
                     id="custom"

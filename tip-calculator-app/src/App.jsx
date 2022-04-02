@@ -10,6 +10,7 @@ const App = () => {
     totalSum: "0.00",
     amountSum: "0.00",
   });
+  const [isResetActive, setIsResetActive] = useState(false);
 
   const [selected, setSelected] = useState(0);
   const handleActive = (button) => {
@@ -33,7 +34,10 @@ const App = () => {
 
   useEffect(() => {
     if (inputBill && numberOfPeople && inputValues) {
+      setIsResetActive(true);
       calculate();
+    } else {
+      setIsResetActive(false);
     }
   }, [numberOfPeople, inputValues, inputBill]);
 
@@ -130,7 +134,11 @@ const App = () => {
             </div>
 
             <div className="reset-div">
-              <button type="reset" onClick={(e) => reset(e)} className="reset">
+              <button
+                type="reset"
+                onClick={(e) => reset(e)}
+                className={isResetActive ? "reset-active" : "reset"}
+              >
                 Reset
               </button>
             </div>

@@ -1,54 +1,20 @@
-import { useState, useEffect } from "react";
 import buttonsList from "./data/buttonsList";
 import "./index.css";
 import { useGlobalContext } from "./context";
 
 const App = () => {
-  const [inputBill, setInputBill] = useState("");
-  const [numberOfPeople, setNumberOfPeople] = useState("");
-  const [inputValues, setInputValues] = useState("");
-  const [totalSums, setTotalSums] = useState({
-    totalSum: "0.00",
-    amountSum: "0.00",
-  });
-  const { isResetActive, setIsResetActive } = useGlobalContext();
+  const {
+    inputBill,
+    setInputBill,
+    numberOfPeople,
+    setNumberOfPeople,
+    totalSums,
+    selected,
+    isResetActive,
+    handleActive,
+    reset,
+  } = useGlobalContext();
 
-  const [selected, setSelected] = useState(0);
-  const handleActive = (button) => {
-    setSelected(button.id);
-    const parsedValues = parseFloat(button.value);
-    setInputValues(parsedValues);
-  };
-  const calculate = () => {
-    const parsedInputBill = parseFloat(inputBill);
-    const percentage = (parsedInputBill * inputValues) / 100;
-    const total = parsedInputBill + percentage;
-    const parsedNumOfPeople = parseFloat(numberOfPeople);
-    //Total
-    const totalS = total / parsedNumOfPeople;
-    const amount = percentage / parsedNumOfPeople;
-    setTotalSums({
-      totalSum: totalS.toFixed(2),
-      amountSum: amount.toFixed(2),
-    });
-  };
-
-  useEffect(() => {
-    if (inputBill && numberOfPeople && inputValues) {
-      setIsResetActive(true);
-      calculate();
-    } else {
-      setIsResetActive(false);
-    }
-  }, [numberOfPeople, inputValues, inputBill]);
-
-  const reset = (e) => {
-    e.preventDefault();
-    setInputBill("");
-    setNumberOfPeople("");
-    setTotalSums({ totalSum: "0.00", amountSum: "0.00" });
-    setSelected(0);
-  };
   return (
     <div className="main">
       <img src="./images/logo.svg" />

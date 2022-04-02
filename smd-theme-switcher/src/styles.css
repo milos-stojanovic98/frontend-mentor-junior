@@ -92,7 +92,7 @@
 #insta-border {
   height: 5px;
   width: 100%;
-  transform: translateY(-68px);
+  transform: translateY(-74px);
   background: linear-gradient(to right, var(--instagram));
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;

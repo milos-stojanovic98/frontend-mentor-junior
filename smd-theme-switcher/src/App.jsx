@@ -73,6 +73,114 @@ const App = () => {
           </span>
         </div>
       </section>
+      <article className="overview-container">
+        <header>
+          <h1> Overview today</h1>
+        </header>
+        <div className="ov-cards-container">
+          <div className="small-cards-fr">
+            <div className="small-card">
+              <div className="sc-fr">
+                <span> Page views</span>
+                <img src="./../images/icon-facebook.svg"></img>
+              </div>
+              <div className="sc-sr">
+                <p className="number-today">87</p>
+                <span className="today">
+                  <img src="./../images/icon-up.svg"></img>3%{" "}
+                </span>
+              </div>
+            </div>
+            <div className="small-card">
+              <div className="sc-fr">
+                <span> Likes </span>
+                <img src="./../images/icon-facebook.svg"></img>
+              </div>
+              <div className="sc-sr">
+                <p className="number-today">52</p>
+                <span className="today-red">
+                  <img src="./../images/icon-down.svg"></img>2%{" "}
+                </span>
+              </div>
+            </div>
+            <div className="small-card">
+              <div className="sc-fr">
+                <span> Likes instagram</span>
+                <img src="./../images/icon-instagram.svg"></img>
+              </div>
+              <div className="sc-sr">
+                <p className="number-today">5462</p>
+                <span className="today">
+                  <img src="./../images/icon-up.svg"></img>2257%{" "}
+                </span>
+              </div>
+            </div>
+            <div className="small-card">
+              <div className="sc-fr">
+                <span> Profile views</span>
+                <img src="./../images/icon-facebook.svg"></img>
+              </div>
+              <div className="sc-sr">
+                <p className="number-today">52k</p>
+                <span className="today">
+                  <img src="./../images/icon-up.svg"></img>1375%{" "}
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="small-cards-sr">
+            {" "}
+            <div className="small-card">
+              <div className="sc-fr">
+                <span> Retweets</span>
+                <img src="./../images/icon-twitter.svg"></img>
+              </div>
+              <div className="sc-sr">
+                <p className="number-today">117</p>
+                <span className="today">
+                  <img src="./../images/icon-up.svg"></img>303%{" "}
+                </span>
+              </div>
+            </div>
+            <div className="small-card">
+              <div className="sc-fr">
+                <span> Likes</span>
+                <img src="./../images/icon-twitter.svg"></img>
+              </div>
+              <div className="sc-sr">
+                <p className="number-today">507</p>
+                <span className="today">
+                  <img src="./../images/icon-up.svg"></img>553%{" "}
+                </span>
+              </div>
+            </div>
+            <div className="small-card">
+              <div className="sc-fr">
+                <span> Likes </span>
+                <img src="./../images/icon-youtube.svg"></img>
+              </div>
+              <div className="sc-sr">
+                <p className="number-today">107</p>
+                <span className="today-red">
+                  <img src="./../images/icon-down.svg"></img>19%{" "}
+                </span>
+              </div>
+            </div>
+            <div className="small-card">
+              <div className="sc-fr">
+                <span> Total views</span>
+                <img src="./../images/icon-youtube.svg"></img>
+              </div>
+              <div className="sc-sr">
+                <p className="number-today">1407</p>
+                <span className="today-red">
+                  <img src="./../images/icon-down.svg"></img>12%{" "}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
     </div>
   );
 };

@@ -94,7 +94,7 @@
 .big-card {
   margin: 1.2rem;
   height: 100%;
-  width: 25vw;
+  width: 20vw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -152,3 +152,62 @@
   margin-bottom: 0.5rem;
 }
 /* Daily overview cards */
+.overview-container {
+  height: 34vh;
+  width: 84vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  display: flex;
+  height: 4vh;
+  width: 80vw;
+}
+header h1 {
+  color: var(--dt-text-white);
+}
+.ov-cards-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.small-cards-fr {
+  display: flex;
+  margin-bottom: 1.5rem;
+  height: 50%;
+  width: 100%;
+}
+.small-cards-sr {
+  display: flex;
+  height: 50%;
+  width: 100%;
+}
+.small-card {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  height: 100%;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--dt-card-background);
+  border-radius: 5px;
+}
+.sc-fr {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.sc-sr {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}

@@ -3,6 +3,7 @@ import "./styles.css";
 const App = () => {
   return (
     <div className="background">
+      {/*navbar*/}
       <nav className="navbar">
         <div className="nav-content">
           <div className="nav-left-side">
@@ -10,10 +11,17 @@ const App = () => {
             <p> Total Followers: 23.004</p>
           </div>
           <div className="nav-right-side">
-            <button type="click"> Dark Mode </button>
+            <label id="toggle-label"> Dark Mode</label>
+            <div className="togle-btn-div">
+              {" "}
+              <button id="toggle-btn" type="click">
+                {" "}
+              </button>
+            </div>
           </div>
         </div>
       </nav>
+      {/*big cards*/}
       <section className="big-cards-container">
         <div id="border-blue" className="big-card">
           <div className="first-row">
@@ -73,6 +81,7 @@ const App = () => {
           </span>
         </div>
       </section>
+      {/*small cards*/}
       <article className="overview-container">
         <div className="ov-cards-container">
           <header>

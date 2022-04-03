@@ -11,7 +11,7 @@
   --youtube: hsl(348, 97%, 39%);
 
   /* Dark and light toggle */
-  --dark-toggle: hsl(210, 78%, 56%), hsl(146, 68%, 55%);
+  --dark-toggle: 45deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%);
   --light-toggle: hsl(230, 22%, 74%);
 
   /* Dark Theme */
@@ -56,6 +56,8 @@
   align-items: center;
   justify-content: center;
   background-color: var(--dt-top-background);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 .nav-content {
   display: flex;
@@ -81,10 +83,30 @@
   width: 50%;
   padding-top: 2rem;
 }
-.nav-right-side button {
-  margin-top: 0.5rem;
-  height: 1.5rem;
+#toggle-label {
+  color: var(--dt-text-white);
+  font-size: 0.8rem;
+  margin-top: 1.3rem;
   width: 5rem;
+  height: 1rem;
+}
+.togle-btn-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1rem;
+  height: 1.6rem;
+  width: 3rem;
+  border-radius: 25px;
+  background: linear-gradient(var(--dark-toggle));
+}
+#toggle-btn {
+  margin-left: 0.1rem;
+  height: 1.3rem;
+  width: 1.3rem;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--dt-top-background);
 }
 /* Big cards */
 .big-cards-container {
@@ -217,6 +239,10 @@ header h1 {
   background-color: var(--dt-card-background);
   border-radius: 5px;
 }
+.small-card:hover {
+  cursor: pointer;
+  filter: brightness(150%);
+}
 .sc-fr {
   height: 100%;
   width: 50%;
@@ -235,12 +261,12 @@ header h1 {
   justify-content: space-around;
   align-items: flex-end;
 }
-#icons {
-  height: 1.3rem;
-}
 #category {
   color: var(--dt-text-blue);
   font-size: 0.8rem;
+}
+#icons {
+  height: 1.3rem;
 }
 .number-today {
   font-size: 2rem;

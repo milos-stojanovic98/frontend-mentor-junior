@@ -108,6 +108,10 @@
   border: none;
   background-color: var(--dt-top-background);
 }
+#toggle-btn:hover {
+  cursor: pointer;
+  filter: brightness(150%);
+}
 /* Big cards */
 .big-cards-container {
   height: 35vh;

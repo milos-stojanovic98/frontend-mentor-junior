@@ -61,7 +61,7 @@
   display: flex;
   flex-direction: row;
   height: 100%;
-  width: 80%;
+  width: 81vw;
 }
 .nav-left-side {
   height: 100%;
@@ -134,7 +134,7 @@
   font-size: 0.8rem;
 }
 .nof {
-  font-size: 3rem;
+  font-size: 2.7rem;
   font-weight: 700;
   color: var(--dt-text-white);
 }
@@ -152,6 +152,7 @@
 }
 .today-red {
   color: var(--bright-red);
+  font-size: 0.9rem;
   margin-bottom: 0.5rem;
 }
 /* Daily overview cards */
@@ -168,7 +169,7 @@
 header {
   display: flex;
   height: 3rem;
-  width: 80vw;
+  width: 81vw;
   margin-bottom: 1.5rem;
 }
 header h1 {
@@ -199,26 +200,35 @@ header h1 {
   height: 100%;
   width: 20vw;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   background-color: var(--dt-card-background);
   border-radius: 5px;
 }
 .sc-fr {
-  height: 50%;
-  width: 100%;
+  height: 100%;
+  width: 50%;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: flex-start;
+  margin-left: 2rem;
 }
 .sc-sr {
-  height: 50%;
-  width: 100%;
+  height: 100%;
+  width: 50%;
   display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
   justify-content: space-around;
+  align-items: flex-end;
 }
 #icons {
   height: 1.3rem;
+}
+#category {
+  color: var(--dt-text-blue);
+  font-size: 0.8rem;
 }
 .number-today {
   font-size: 2rem;

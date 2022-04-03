@@ -81,23 +81,23 @@ const App = () => {
           <div className="small-cards-fr">
             <div className="small-card">
               <div className="sc-fr">
-                <span id="nathan"> Page views</span>
-                <img id="icons" src="./../images/icon-facebook.svg"></img>
+                <span id="category"> Page views</span>
+                <p className="number-today">87</p>
               </div>
               <div className="sc-sr">
-                <p className="number-today">87</p>
+                <img id="icons" src="./../images/icon-facebook.svg"></img>
                 <span className="today">
-                  <img src="./../images/icon-up.svg"></img>3%{" "}
+                  <img src="./../images/icon-up.svg"></img> 3%{" "}
                 </span>
               </div>
             </div>
             <div className="small-card">
               <div className="sc-fr">
-                <span id="nathan"> Likes </span>
-                <img id="icons" src="./../images/icon-facebook.svg"></img>
+                <span id="category"> Likes </span>
+                <p className="number-today">52</p>
               </div>
               <div className="sc-sr">
-                <p className="number-today">52</p>
+                <img id="icons" src="./../images/icon-facebook.svg"></img>
                 <span className="today-red">
                   <img src="./../images/icon-down.svg"></img>2%{" "}
                 </span>
@@ -105,11 +105,12 @@ const App = () => {
             </div>
             <div className="small-card">
               <div className="sc-fr">
-                <span id="nathan"> Likes instagram</span>
-                <img id="icons" src="./../images/icon-instagram.svg"></img>
+                <span id="category"> Likes </span>
+                <p className="number-today">5462</p>
               </div>
               <div className="sc-sr">
-                <p className="number-today">5462</p>
+                <img id="icons" src="./../images/icon-instagram.svg"></img>
+
                 <span className="today">
                   <img src="./../images/icon-up.svg"></img>2257%{" "}
                 </span>
@@ -117,11 +118,11 @@ const App = () => {
             </div>
             <div className="small-card">
               <div className="sc-fr">
-                <span id="nathan"> Profile views</span>
-                <img id="icons" src="./../images/icon-facebook.svg"></img>
+                <span id="category"> Profile views</span>
+                <p className="number-today">52k</p>
               </div>
               <div className="sc-sr">
-                <p className="number-today">52k</p>
+                <img id="icons" src="./../images/icon-facebook.svg"></img>
                 <span className="today">
                   <img src="./../images/icon-up.svg"></img>1375%{" "}
                 </span>
@@ -132,11 +133,11 @@ const App = () => {
             {" "}
             <div className="small-card">
               <div className="sc-fr">
-                <span id="nathan"> Retweets</span>
-                <img id="icons" src="./../images/icon-twitter.svg"></img>
+                <span id="category"> Retweets</span>
+                <p className="number-today">117</p>
               </div>
               <div className="sc-sr">
-                <p className="number-today">117</p>
+                <img id="icons" src="./../images/icon-twitter.svg"></img>
                 <span className="today">
                   <img src="./../images/icon-up.svg"></img>303%{" "}
                 </span>
@@ -144,11 +145,11 @@ const App = () => {
             </div>
             <div className="small-card">
               <div className="sc-fr">
-                <span id="nathan"> Likes</span>
-                <img id="icons" src="./../images/icon-twitter.svg"></img>
+                <span id="category"> Likes</span>
+                <p className="number-today">507</p>
               </div>
               <div className="sc-sr">
-                <p className="number-today">507</p>
+                <img id="icons" src="./../images/icon-twitter.svg"></img>
                 <span className="today">
                   <img src="./../images/icon-up.svg"></img>553%{" "}
                 </span>
@@ -156,11 +157,11 @@ const App = () => {
             </div>
             <div className="small-card">
               <div className="sc-fr">
-                <span id="nathan"> Likes </span>
-                <img id="icons" src="./../images/icon-youtube.svg"></img>
+                <span id="category"> Likes </span>
+                <p className="number-today">107</p>
               </div>
               <div className="sc-sr">
-                <p className="number-today">107</p>
+                <img id="icons" src="./../images/icon-youtube.svg"></img>
                 <span className="today-red">
                   <img src="./../images/icon-down.svg"></img>19%{" "}
                 </span>
@@ -168,11 +169,11 @@ const App = () => {
             </div>
             <div className="small-card">
               <div className="sc-fr">
-                <span id="nathan"> Total views</span>
-                <img id="icons" src="./../images/icon-youtube.svg"></img>
+                <span id="category"> Total views</span>
+                <p className="number-today">1407</p>
               </div>
               <div className="sc-sr">
-                <p className="number-today">1407</p>
+                <img id="icons" src="./../images/icon-youtube.svg"></img>
                 <span className="today-red">
                   <img src="./../images/icon-down.svg"></img>12%{" "}
                 </span>

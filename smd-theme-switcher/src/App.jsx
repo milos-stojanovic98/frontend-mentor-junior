@@ -37,8 +37,7 @@ const App = () => {
             <img src="./../images/icon-up.svg"></img> 99 Today{" "}
           </span>
         </div>
-        <div id="border-blue" className="big-card">
-          <div id="insta-border"></div>
+        <div id="insta-border" className="big-card">
           <p id="nathan">
             <img src="./../images/icon-instagram.svg"></img> @nathanf
           </p>

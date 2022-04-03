@@ -7,7 +7,7 @@
 
   --facebook: hsl(208, 92%, 53%);
   --twitter: hsl(203, 89%, 53%);
-  --instagram: hsl(37, 97%, 70%), hsl(329, 70%, 58%);
+  --instagram: 45deg, hsl(37, 97%, 70%) 50%, hsl(329, 70%, 58%) 100%;
   --youtube: hsl(348, 97%, 39%);
 
   /* Dark and light toggle */
@@ -90,12 +90,10 @@
   border-top: 5px solid var(--facebook);
 }
 #insta-border {
-  height: 5px;
-  width: 100%;
-  transform: translateY(-74px);
-  background: linear-gradient(to right, var(--instagram));
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-width: 5px 0px 0px 0px;
+  border-image: linear-gradient(var(--instagram));
+  border-image-slice: 9;
+  border-style: solid;
 }
 #border-red {
   border-top: 5px solid var(--bright-red);

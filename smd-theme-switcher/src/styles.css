@@ -46,15 +46,25 @@
   flex-direction: column;
   background-color: var(--dt-background);
 }
+/* Navbar */
 .navbar {
   height: 30vh;
   width: 100vw;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   background-color: var(--dt-top-background);
 }
+.nav-content {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 80%;
+}
 .nav-left-side {
-  padding: 2rem 0rem 0rem 6rem;
+  height: 100%;
+  width: 50%;
+  padding-top: 2rem;
 }
 .nav-left-side h1 {
   color: var(--dt-text-white);
@@ -63,17 +73,23 @@
   color: var(--dt-text-blue);
 }
 .nav-right-side {
-  padding: 2rem 6rem 0rem 0rem;
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  width: 50%;
+  padding-top: 2rem;
 }
 .nav-right-side button {
   margin-top: 0.5rem;
   height: 1.5rem;
   width: 5rem;
 }
+/* Big cards */
 .big-cards-container {
   height: 30vh;
-  width: 88vw;
+  width: 84vw;
   display: flex;
+  transform: translateY(-145px);
 }
 .big-card {
   margin: 1.2rem;
@@ -81,10 +97,21 @@
   width: 25vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   background-color: var(--dt-card-background);
   border-radius: 5px;
+}
+.first-row {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.second-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
 }
 #border-blue {
   border-top: 5px solid var(--facebook);
@@ -100,6 +127,8 @@
 }
 #nathan {
   color: var(--dt-text-blue);
+  padding-left: 0.6rem;
+  font-size: 0.8rem;
 }
 .nof {
   font-size: 3rem;
@@ -111,10 +140,15 @@
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 5px;
+  margin-bottom: 2rem;
 }
 .today {
   color: var(--lime-green);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
 }
 .today-red {
   color: var(--bright-red);
+  margin-bottom: 0.5rem;
 }
+/* Daily overview cards */

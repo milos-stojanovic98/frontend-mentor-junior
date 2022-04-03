@@ -74,15 +74,15 @@ const App = () => {
         </div>
       </section>
       <article className="overview-container">
-        <header>
-          <h1> Overview today</h1>
-        </header>
         <div className="ov-cards-container">
+          <header>
+            <h1> Overview today</h1>
+          </header>
           <div className="small-cards-fr">
             <div className="small-card">
               <div className="sc-fr">
-                <span> Page views</span>
-                <img src="./../images/icon-facebook.svg"></img>
+                <span id="nathan"> Page views</span>
+                <img id="icons" src="./../images/icon-facebook.svg"></img>
               </div>
               <div className="sc-sr">
                 <p className="number-today">87</p>
@@ -93,8 +93,8 @@ const App = () => {
             </div>
             <div className="small-card">
               <div className="sc-fr">
-                <span> Likes </span>
-                <img src="./../images/icon-facebook.svg"></img>
+                <span id="nathan"> Likes </span>
+                <img id="icons" src="./../images/icon-facebook.svg"></img>
               </div>
               <div className="sc-sr">
                 <p className="number-today">52</p>
@@ -105,8 +105,8 @@ const App = () => {
             </div>
             <div className="small-card">
               <div className="sc-fr">
-                <span> Likes instagram</span>
-                <img src="./../images/icon-instagram.svg"></img>
+                <span id="nathan"> Likes instagram</span>
+                <img id="icons" src="./../images/icon-instagram.svg"></img>
               </div>
               <div className="sc-sr">
                 <p className="number-today">5462</p>
@@ -117,8 +117,8 @@ const App = () => {
             </div>
             <div className="small-card">
               <div className="sc-fr">
-                <span> Profile views</span>
-                <img src="./../images/icon-facebook.svg"></img>
+                <span id="nathan"> Profile views</span>
+                <img id="icons" src="./../images/icon-facebook.svg"></img>
               </div>
               <div className="sc-sr">
                 <p className="number-today">52k</p>
@@ -132,8 +132,8 @@ const App = () => {
             {" "}
             <div className="small-card">
               <div className="sc-fr">
-                <span> Retweets</span>
-                <img src="./../images/icon-twitter.svg"></img>
+                <span id="nathan"> Retweets</span>
+                <img id="icons" src="./../images/icon-twitter.svg"></img>
               </div>
               <div className="sc-sr">
                 <p className="number-today">117</p>
@@ -144,8 +144,8 @@ const App = () => {
             </div>
             <div className="small-card">
               <div className="sc-fr">
-                <span> Likes</span>
-                <img src="./../images/icon-twitter.svg"></img>
+                <span id="nathan"> Likes</span>
+                <img id="icons" src="./../images/icon-twitter.svg"></img>
               </div>
               <div className="sc-sr">
                 <p className="number-today">507</p>
@@ -156,8 +156,8 @@ const App = () => {
             </div>
             <div className="small-card">
               <div className="sc-fr">
-                <span> Likes </span>
-                <img src="./../images/icon-youtube.svg"></img>
+                <span id="nathan"> Likes </span>
+                <img id="icons" src="./../images/icon-youtube.svg"></img>
               </div>
               <div className="sc-sr">
                 <p className="number-today">107</p>
@@ -168,8 +168,8 @@ const App = () => {
             </div>
             <div className="small-card">
               <div className="sc-fr">
-                <span> Total views</span>
-                <img src="./../images/icon-youtube.svg"></img>
+                <span id="nathan"> Total views</span>
+                <img id="icons" src="./../images/icon-youtube.svg"></img>
               </div>
               <div className="sc-sr">
                 <p className="number-today">1407</p>

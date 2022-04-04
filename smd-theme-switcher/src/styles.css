@@ -39,14 +39,6 @@
   box-sizing: border-box;
   font-family: var(--font-family);
 }
-.container {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: var(--dt-background);
-}
 /* Navbar */
 .nav-content {
   display: flex;
@@ -69,53 +61,11 @@
   width: 50%;
   padding-top: 2rem;
 }
-#toggle-label {
-  color: var(--dt-text-white);
-  font-size: 0.8rem;
-  margin-top: 1.3rem;
-  width: 5rem;
-  height: 1rem;
-}
-.togle-btn-div {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 1rem;
-  height: 1.6rem;
-  width: 3rem;
-  border-radius: 25px;
-  background: linear-gradient(var(--dark-toggle));
-}
-#toggle-btn {
-  margin-left: 0.1rem;
-  height: 1.3rem;
-  width: 1.3rem;
-  border-radius: 50%;
-  border: none;
-  background-color: var(--dt-top-background);
-}
-#toggle-btn:hover {
-  cursor: pointer;
-  filter: brightness(150%);
-}
 /* Big cards */
 .big-cards-container {
   height: 35vh;
   width: 84vw;
   display: flex;
-}
-.big-card {
-  margin: 0rem 1rem 0rem 1rem;
-  height: 100%;
-  width: 20vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: var(--dt-card-background);
-  border-radius: 5px;
-  transform: translateY(-105px);
-  position: relative;
 }
 .big-card:hover {
   filter: brightness(130%);
@@ -152,16 +102,6 @@
 #border-red {
   border-top: 5px solid var(--bright-red);
 }
-#nathan {
-  color: var(--dt-text-blue);
-  padding-left: 0.6rem;
-  font-size: 0.8rem;
-}
-.nof {
-  font-size: 2.7rem;
-  font-weight: 700;
-  color: var(--dt-text-white);
-}
 .followers {
   color: var(--dt-text-blue);
   text-transform: uppercase;
@@ -171,12 +111,14 @@
 }
 .today {
   color: var(--lime-green);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin-bottom: 0.5rem;
+  font-weight: 700;
 }
 .today-red {
   color: var(--bright-red);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 700;
   margin-bottom: 0.5rem;
 }
 /* Daily overview cards */
@@ -216,16 +158,6 @@ header {
   height: 50%;
   width: 100%;
 }
-.small-card {
-  margin: 0rem 1rem 0rem 1rem;
-  height: 100%;
-  width: 20vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--dt-card-background);
-  border-radius: 5px;
-}
 .small-card:hover {
   cursor: pointer;
   filter: brightness(150%);
@@ -248,15 +180,6 @@ header {
   justify-content: space-around;
   align-items: flex-end;
 }
-#category {
-  color: var(--dt-text-blue);
-  font-size: 0.8rem;
-}
 #icons {
   height: 1.3rem;
-}
-.number-today {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--dt-text-white);
 }

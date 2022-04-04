@@ -1,99 +1,276 @@
-import { StyledNavbar } from "./StyledComponents/StyledNavbar";
-import { StyledH1 } from "./StyledComponents/StyledH1";
+import { useState } from "react";
+import { StyledNavbar, StyledH1 } from "./StyledComponents/StyledNavbar";
+import { StyledContainer } from "./StyledComponents/StyledContainer";
+import { StyledBigCard, StyledSmallCard } from "./StyledComponents/StyledCards";
+import {
+  StyledToggleButton,
+  StyledTogglerDiv,
+  StyledTogglerLabel,
+} from "./StyledComponents/StyledToggler";
+import {
+  StyledTexts,
+  NoF,
+  Category,
+  NumberToday,
+  TotalFollowers,
+} from "./StyledComponents/StyledTexts";
 import "./styles.css";
 
 const App = () => {
+  const [isDarkTheme, setIsDarkTheme] = useState(true);
+  const themeToggler = () => {
+    setIsDarkTheme(!isDarkTheme);
+  };
+
   return (
-    <div className="container">
+    <StyledContainer
+      backgroundColor={
+        isDarkTheme ? "var(--dt-background)" : " --lt-background"
+      }
+    >
       {/*navbar*/}
-      <StyledNavbar>
+      <StyledNavbar
+        backgroundColor={
+          isDarkTheme ? "var(--dt-top-background)" : "var(--lt-top-background)"
+        }
+      >
         <div className="nav-content">
           <div className="nav-left-side">
-            <StyledH1> Social Media Dashboard</StyledH1>
-            <p> Total Followers: 23.004</p>
+            <StyledH1
+              color={
+                isDarkTheme
+                  ? "var(--dt-text-white)"
+                  : "var(--lt-text-very-dark-blue)"
+              }
+            >
+              {" "}
+              Social Media Dashboard
+            </StyledH1>
+            <TotalFollowers
+              color={
+                isDarkTheme ? "var(--dt-text-blue)" : "var(--lt-text-dark-blue)"
+              }
+            >
+              {" "}
+              Total Followers: 23.004
+            </TotalFollowers>
           </div>
           <div className="nav-right-side">
-            <label id="toggle-label"> Dark Mode</label>
-            <div className="togle-btn-div">
+            <StyledTogglerLabel
+              color={
+                isDarkTheme ? "var(--dt-text-blue)" : "var(--light-toggle)"
+              }
+            >
+              Dark Mode
+            </StyledTogglerLabel>
+            <StyledTogglerDiv
+              background={
+                isDarkTheme
+                  ? "linear-gradient(var(--dark-toggle))"
+                  : "var(--light-toggle)"
+              }
+            >
               {" "}
-              <button id="toggle-btn" type="click">
-                {" "}
-              </button>
-            </div>
+              <StyledToggleButton
+                backgroundColor={
+                  isDarkTheme
+                    ? "var(--dt-top-background)"
+                    : "var(--dt-text-white)"
+                }
+              ></StyledToggleButton>{" "}
+            </StyledTogglerDiv>
           </div>
         </div>
       </StyledNavbar>
       {/*big cards*/}
       <section className="big-cards-container">
-        <article id="border-blue" className="big-card">
+        <StyledBigCard
+          backgroundColor={
+            isDarkTheme
+              ? "var(--dt-card-background)"
+              : "var(--lt-card-background)"
+          }
+          id="border-blue"
+        >
           <div className="bc-first-row">
             <img src="./../images/icon-facebook.svg"></img>
-            <p id="nathan"> @nathanf</p>
+            <StyledTexts
+              color={
+                isDarkTheme ? "var(--dt-text-blue)" : "var(--lt-text-dark-blue)"
+              }
+            >
+              @nathanf
+            </StyledTexts>{" "}
           </div>
           <div className="bc-second-row">
-            <p className="nof"> 1987 </p>
+            <NoF
+              color={
+                isDarkTheme
+                  ? "var(--dt-text-white)"
+                  : "var(--lt-text-very-dark-blue)"
+              }
+            >
+              1987{" "}
+            </NoF>
             <h4 className="followers"> Followers </h4>
           </div>
           <span className="today">
             {" "}
             <img src="./../images/icon-up.svg"></img>12 Today{" "}
           </span>
-        </article>
-        <article id="border-blue" className="big-card">
+        </StyledBigCard>
+        <StyledBigCard
+          backgroundColor={
+            isDarkTheme
+              ? "var(--dt-card-background)"
+              : "var(--lt-card-background)"
+          }
+          id="border-blue"
+        >
           <div className="bc-first-row">
             {" "}
             <img src="./../images/icon-twitter.svg"></img>
-            <p id="nathan"> @nathanf</p>
+            <StyledTexts
+              color={
+                isDarkTheme ? "var(--dt-text-blue)" : "var(--lt-text-dark-blue)"
+              }
+            >
+              @nathanf
+            </StyledTexts>{" "}
           </div>
           <div className="bc-second-row">
-            <p className="nof"> 1044 </p>
+            <NoF
+              color={
+                isDarkTheme
+                  ? "var(--dt-text-white)"
+                  : "var(--lt-text-very-dark-blue)"
+              }
+            >
+              {" "}
+              1044{" "}
+            </NoF>
             <h4 className="followers"> Followers </h4>
           </div>
           <span className="today">
             {" "}
             <img src="./../images/icon-up.svg"></img> 99 Today{" "}
           </span>
-        </article>
-        <article id="insta-border" className="big-card">
+        </StyledBigCard>
+        <StyledBigCard
+          backgroundColor={
+            isDarkTheme
+              ? "var(--dt-card-background)"
+              : "var(--lt-card-background)"
+          }
+          id="insta-border"
+        >
           <div className="bc-first-row">
             <img src="./../images/icon-instagram.svg"></img>
-            <p id="nathan">@realnathanf</p>
+            <StyledTexts
+              color={
+                isDarkTheme ? "var(--dt-text-blue)" : "var(--lt-text-dark-blue)"
+              }
+            >
+              @realnathanf
+            </StyledTexts>{" "}
           </div>
           <div className="bc-second-row">
-            <p className="nof"> 11k </p>
+            <NoF
+              color={
+                isDarkTheme
+                  ? "var(--dt-text-white)"
+                  : "var(--lt-text-very-dark-blue)"
+              }
+            >
+              {" "}
+              11k{" "}
+            </NoF>
             <h4 className="followers"> Followers </h4>
           </div>
           <span className="today">
             {" "}
             <img src="./../images/icon-up.svg"></img> 1099 Today{" "}
           </span>
-        </article>
-        <article id="border-red" className="big-card">
+        </StyledBigCard>
+        <StyledBigCard
+          backgroundColor={
+            isDarkTheme
+              ? "var(--dt-card-background)"
+              : "var(--lt-card-background)"
+          }
+          id="border-red"
+        >
           <div className="bc-first-row">
             <img src="./../images/icon-youtube.svg"></img>
-            <p id="nathan"> Nathan F.</p>
+            <StyledTexts
+              color={
+                isDarkTheme ? "var(--dt-text-blue)" : "var(--lt-text-dark-blue)"
+              }
+            >
+              Nathan F
+            </StyledTexts>{" "}
           </div>
           <div className="bc-second-row">
-            <p className="nof"> 8239 </p>
+            <NoF
+              color={
+                isDarkTheme
+                  ? "var(--dt-text-white)"
+                  : "var(--lt-text-very-dark-blue)"
+              }
+            >
+              {" "}
+              8239{" "}
+            </NoF>
             <h4 className="followers"> Subscribers </h4>
           </div>
           <span className="today-red">
             {" "}
             <img src="./../images/icon-down.svg"></img> 144 Today{" "}
           </span>
-        </article>
+        </StyledBigCard>
       </section>
       {/*small cards*/}
       <section className="overview-container">
         <div className="ov-cards-container">
           <header>
-            <StyledH1> Overview today</StyledH1>
+            <StyledH1
+              color={
+                isDarkTheme
+                  ? "var(--dt-text-white)"
+                  : "var(--lt-text-very-dark-blue)"
+              }
+            >
+              {" "}
+              Overview - today
+            </StyledH1>
           </header>
           <div className="small-cards-fr">
-            <article className="small-card">
+            <StyledSmallCard
+              backgroundColor={
+                isDarkTheme
+                  ? "var(--dt-card-background)"
+                  : "var(--lt-card-background)"
+              }
+            >
               <div className="sc-inside-first-row">
-                <span id="category"> Page views</span>
-                <p className="number-today">87</p>
+                <Category
+                  color={
+                    isDarkTheme
+                      ? "var(--dt-text-blue)"
+                      : "var(--lt-text-dark-blue)"
+                  }
+                >
+                  Page views
+                </Category>
+                <NumberToday
+                  color={
+                    isDarkTheme
+                      ? "var(--dt-text-white)"
+                      : "var(--lt-text-very-dark-blue)"
+                  }
+                >
+                  87
+                </NumberToday>
               </div>
               <div className="sc-inside-second-row">
                 <img id="icons" src="./../images/icon-facebook.svg"></img>
@@ -101,11 +278,34 @@ const App = () => {
                   <img src="./../images/icon-up.svg"></img> 3%{" "}
                 </span>
               </div>
-            </article>
-            <article className="small-card">
+            </StyledSmallCard>
+            <StyledSmallCard
+              backgroundColor={
+                isDarkTheme
+                  ? "var(--dt-card-background)"
+                  : "var(--lt-card-background)"
+              }
+            >
               <div className="sc-inside-first-row">
-                <span id="category"> Likes </span>
-                <p className="number-today">52</p>
+                <Category
+                  color={
+                    isDarkTheme
+                      ? "var(--dt-text-blue)"
+                      : "var(--lt-text-dark-blue)"
+                  }
+                >
+                  {" "}
+                  Likes{" "}
+                </Category>
+                <NumberToday
+                  color={
+                    isDarkTheme
+                      ? "var(--dt-text-white)"
+                      : "var(--lt-text-very-dark-blue)"
+                  }
+                >
+                  52
+                </NumberToday>
               </div>
               <div className="sc-inside-second-row">
                 <img id="icons" src="./../images/icon-facebook.svg"></img>
@@ -113,11 +313,34 @@ const App = () => {
                   <img src="./../images/icon-down.svg"></img>2%{" "}
                 </span>
               </div>
-            </article>
-            <article className="small-card">
+            </StyledSmallCard>
+            <StyledSmallCard
+              backgroundColor={
+                isDarkTheme
+                  ? "var(--dt-card-background)"
+                  : "var(--lt-card-background)"
+              }
+            >
               <div className="sc-inside-first-row">
-                <span id="category"> Likes </span>
-                <p className="number-today">5462</p>
+                <Category
+                  color={
+                    isDarkTheme
+                      ? "var(--dt-text-blue)"
+                      : "var(--lt-text-dark-blue)"
+                  }
+                >
+                  {" "}
+                  Likes{" "}
+                </Category>
+                <NumberToday
+                  color={
+                    isDarkTheme
+                      ? "var(--dt-text-white)"
+                      : "var(--lt-text-very-dark-blue)"
+                  }
+                >
+                  5462
+                </NumberToday>
               </div>
               <div className="sc-inside-second-row">
                 <img id="icons" src="./../images/icon-instagram.svg"></img>
@@ -126,11 +349,34 @@ const App = () => {
                   <img src="./../images/icon-up.svg"></img>2257%{" "}
                 </span>
               </div>
-            </article>
-            <article className="small-card">
+            </StyledSmallCard>
+            <StyledSmallCard
+              backgroundColor={
+                isDarkTheme
+                  ? "var(--dt-card-background)"
+                  : "var(--lt-card-background)"
+              }
+            >
               <div className="sc-inside-first-row">
-                <span id="category"> Profile views</span>
-                <p className="number-today">52k</p>
+                <Category
+                  color={
+                    isDarkTheme
+                      ? "var(--dt-text-blue)"
+                      : "var(--lt-text-dark-blue)"
+                  }
+                >
+                  {" "}
+                  Profile views{" "}
+                </Category>
+                <NumberToday
+                  color={
+                    isDarkTheme
+                      ? "var(--dt-text-white)"
+                      : "var(--lt-text-very-dark-blue)"
+                  }
+                >
+                  52k
+                </NumberToday>
               </div>
               <div className="sc-inside-second-row">
                 <img id="icons" src="./../images/icon-facebook.svg"></img>
@@ -138,14 +384,37 @@ const App = () => {
                   <img src="./../images/icon-up.svg"></img>1375%{" "}
                 </span>
               </div>
-            </article>
+            </StyledSmallCard>
           </div>
           <div className="small-cards-sr">
             {" "}
-            <article className="small-card">
+            <StyledSmallCard
+              backgroundColor={
+                isDarkTheme
+                  ? "var(--dt-card-background)"
+                  : "var(--lt-card-background)"
+              }
+            >
               <div className="sc-inside-first-row">
-                <span id="category"> Retweets</span>
-                <p className="number-today">117</p>
+                <Category
+                  color={
+                    isDarkTheme
+                      ? "var(--dt-text-blue)"
+                      : "var(--lt-text-dark-blue)"
+                  }
+                >
+                  {" "}
+                  Retweets{" "}
+                </Category>
+                <NumberToday
+                  color={
+                    isDarkTheme
+                      ? "var(--dt-text-white)"
+                      : "var(--lt-text-very-dark-blue)"
+                  }
+                >
+                  117
+                </NumberToday>
               </div>
               <div className="sc-inside-second-row">
                 <img id="icons" src="./../images/icon-twitter.svg"></img>
@@ -153,11 +422,34 @@ const App = () => {
                   <img src="./../images/icon-up.svg"></img>303%{" "}
                 </span>
               </div>
-            </article>
-            <article className="small-card">
+            </StyledSmallCard>
+            <StyledSmallCard
+              backgroundColor={
+                isDarkTheme
+                  ? "var(--dt-card-background)"
+                  : "var(--lt-card-background)"
+              }
+            >
               <div className="sc-inside-first-row">
-                <span id="category"> Likes</span>
-                <p className="number-today">507</p>
+                <Category
+                  color={
+                    isDarkTheme
+                      ? "var(--dt-text-blue)"
+                      : "var(--lt-text-dark-blue)"
+                  }
+                >
+                  {" "}
+                  Likes{" "}
+                </Category>
+                <NumberToday
+                  color={
+                    isDarkTheme
+                      ? "var(--dt-text-white)"
+                      : "var(--lt-text-very-dark-blue)"
+                  }
+                >
+                  507
+                </NumberToday>
               </div>
               <div className="sc-inside-second-row">
                 <img id="icons" src="./../images/icon-twitter.svg"></img>
@@ -165,11 +457,34 @@ const App = () => {
                   <img src="./../images/icon-up.svg"></img>553%{" "}
                 </span>
               </div>
-            </article>
-            <article className="small-card">
+            </StyledSmallCard>
+            <StyledSmallCard
+              backgroundColor={
+                isDarkTheme
+                  ? "var(--dt-card-background)"
+                  : "var(--lt-card-background)"
+              }
+            >
               <div className="sc-inside-first-row">
-                <span id="category"> Likes </span>
-                <p className="number-today">107</p>
+                <Category
+                  color={
+                    isDarkTheme
+                      ? "var(--dt-text-blue)"
+                      : "var(--lt-text-dark-blue)"
+                  }
+                >
+                  {" "}
+                  Likes{" "}
+                </Category>
+                <NumberToday
+                  color={
+                    isDarkTheme
+                      ? "var(--dt-text-white)"
+                      : "var(--lt-text-very-dark-blue)"
+                  }
+                >
+                  107
+                </NumberToday>
               </div>
               <div className="sc-inside-second-row">
                 <img id="icons" src="./../images/icon-youtube.svg"></img>
@@ -177,11 +492,34 @@ const App = () => {
                   <img src="./../images/icon-down.svg"></img>19%{" "}
                 </span>
               </div>
-            </article>
-            <article className="small-card">
+            </StyledSmallCard>
+            <StyledSmallCard
+              backgroundColor={
+                isDarkTheme
+                  ? "var(--dt-card-background)"
+                  : "var(--lt-card-background)"
+              }
+            >
               <div className="sc-inside-first-row">
-                <span id="category"> Total views</span>
-                <p className="number-today">1407</p>
+                <Category
+                  color={
+                    isDarkTheme
+                      ? "var(--dt-text-blue)"
+                      : "var(--lt-text-dark-blue)"
+                  }
+                >
+                  {" "}
+                  Total Views{" "}
+                </Category>
+                <NumberToday
+                  color={
+                    isDarkTheme
+                      ? "var(--dt-text-white)"
+                      : "var(--lt-text-very-dark-blue)"
+                  }
+                >
+                  1407
+                </NumberToday>
               </div>
               <div className="sc-inside-second-row">
                 <img id="icons" src="./../images/icon-youtube.svg"></img>
@@ -189,11 +527,11 @@ const App = () => {
                   <img src="./../images/icon-down.svg"></img>12%{" "}
                 </span>
               </div>
-            </article>
+            </StyledSmallCard>
           </div>
         </div>
       </section>
-    </div>
+    </StyledContainer>
   );
 };
 

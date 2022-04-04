@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./styles.css";
 const App = () => {
   return (
-    <div className="background">
+    <div className="container">
       {/*navbar*/}
       <nav className="navbar">
         <div className="nav-content">
@@ -23,12 +23,12 @@ const App = () => {
       </nav>
       {/*big cards*/}
       <section className="big-cards-container">
-        <div id="border-blue" className="big-card">
-          <div className="first-row">
+        <article id="border-blue" className="big-card">
+          <div className="bc-first-row">
             <img src="./../images/icon-facebook.svg"></img>
             <p id="nathan"> @nathanf</p>
           </div>
-          <div className="second-row">
+          <div className="bc-second-row">
             <p className="nof"> 1987 </p>
             <h4 className="followers"> Followers </h4>
           </div>
@@ -36,14 +36,14 @@ const App = () => {
             {" "}
             <img src="./../images/icon-up.svg"></img>12 Today{" "}
           </span>
-        </div>
-        <div id="border-blue" className="big-card">
-          <div className="first-row">
+        </article>
+        <article id="border-blue" className="big-card">
+          <div className="bc-first-row">
             {" "}
             <img src="./../images/icon-twitter.svg"></img>
             <p id="nathan"> @nathanf</p>
           </div>
-          <div className="second-row">
+          <div className="bc-second-row">
             <p className="nof"> 1044 </p>
             <h4 className="followers"> Followers </h4>
           </div>
@@ -51,13 +51,13 @@ const App = () => {
             {" "}
             <img src="./../images/icon-up.svg"></img> 99 Today{" "}
           </span>
-        </div>
-        <div id="insta-border" className="big-card">
-          <div className="first-row">
+        </article>
+        <article id="insta-border" className="big-card">
+          <div className="bc-first-row">
             <img src="./../images/icon-instagram.svg"></img>
             <p id="nathan">@realnathanf</p>
           </div>
-          <div className="second-row">
+          <div className="bc-second-row">
             <p className="nof"> 11k </p>
             <h4 className="followers"> Followers </h4>
           </div>
@@ -65,13 +65,13 @@ const App = () => {
             {" "}
             <img src="./../images/icon-up.svg"></img> 1099 Today{" "}
           </span>
-        </div>
-        <div id="border-red" className="big-card">
-          <div className="first-row">
+        </article>
+        <article id="border-red" className="big-card">
+          <div className="bc-first-row">
             <img src="./../images/icon-youtube.svg"></img>
             <p id="nathan"> Nathan F.</p>
           </div>
-          <div className="second-row">
+          <div className="bc-second-row">
             <p className="nof"> 8239 </p>
             <h4 className="followers"> Subscribers </h4>
           </div>
@@ -79,118 +79,118 @@ const App = () => {
             {" "}
             <img src="./../images/icon-down.svg"></img> 144 Today{" "}
           </span>
-        </div>
+        </article>
       </section>
       {/*small cards*/}
-      <article className="overview-container">
+      <section className="overview-container">
         <div className="ov-cards-container">
           <header>
             <h1> Overview today</h1>
           </header>
           <div className="small-cards-fr">
-            <div className="small-card">
-              <div className="sc-fr">
+            <article className="small-card">
+              <div className="sc-inside-first-row">
                 <span id="category"> Page views</span>
                 <p className="number-today">87</p>
               </div>
-              <div className="sc-sr">
+              <div className="sc-inside-second-row">
                 <img id="icons" src="./../images/icon-facebook.svg"></img>
                 <span className="today">
                   <img src="./../images/icon-up.svg"></img> 3%{" "}
                 </span>
               </div>
-            </div>
-            <div className="small-card">
-              <div className="sc-fr">
+            </article>
+            <article className="small-card">
+              <div className="sc-inside-first-row">
                 <span id="category"> Likes </span>
                 <p className="number-today">52</p>
               </div>
-              <div className="sc-sr">
+              <div className="sc-inside-second-row">
                 <img id="icons" src="./../images/icon-facebook.svg"></img>
                 <span className="today-red">
                   <img src="./../images/icon-down.svg"></img>2%{" "}
                 </span>
               </div>
-            </div>
-            <div className="small-card">
-              <div className="sc-fr">
+            </article>
+            <article className="small-card">
+              <div className="sc-inside-first-row">
                 <span id="category"> Likes </span>
                 <p className="number-today">5462</p>
               </div>
-              <div className="sc-sr">
+              <div className="sc-inside-second-row">
                 <img id="icons" src="./../images/icon-instagram.svg"></img>
 
                 <span className="today">
                   <img src="./../images/icon-up.svg"></img>2257%{" "}
                 </span>
               </div>
-            </div>
-            <div className="small-card">
-              <div className="sc-fr">
+            </article>
+            <article className="small-card">
+              <div className="sc-inside-first-row">
                 <span id="category"> Profile views</span>
                 <p className="number-today">52k</p>
               </div>
-              <div className="sc-sr">
+              <div className="sc-inside-second-row">
                 <img id="icons" src="./../images/icon-facebook.svg"></img>
                 <span className="today">
                   <img src="./../images/icon-up.svg"></img>1375%{" "}
                 </span>
               </div>
-            </div>
+            </article>
           </div>
           <div className="small-cards-sr">
             {" "}
-            <div className="small-card">
-              <div className="sc-fr">
+            <article className="small-card">
+              <div className="sc-inside-first-row">
                 <span id="category"> Retweets</span>
                 <p className="number-today">117</p>
               </div>
-              <div className="sc-sr">
+              <div className="sc-inside-second-row">
                 <img id="icons" src="./../images/icon-twitter.svg"></img>
                 <span className="today">
                   <img src="./../images/icon-up.svg"></img>303%{" "}
                 </span>
               </div>
-            </div>
-            <div className="small-card">
-              <div className="sc-fr">
+            </article>
+            <article className="small-card">
+              <div className="sc-inside-first-row">
                 <span id="category"> Likes</span>
                 <p className="number-today">507</p>
               </div>
-              <div className="sc-sr">
+              <div className="sc-inside-second-row">
                 <img id="icons" src="./../images/icon-twitter.svg"></img>
                 <span className="today">
                   <img src="./../images/icon-up.svg"></img>553%{" "}
                 </span>
               </div>
-            </div>
-            <div className="small-card">
-              <div className="sc-fr">
+            </article>
+            <article className="small-card">
+              <div className="sc-inside-first-row">
                 <span id="category"> Likes </span>
                 <p className="number-today">107</p>
               </div>
-              <div className="sc-sr">
+              <div className="sc-inside-second-row">
                 <img id="icons" src="./../images/icon-youtube.svg"></img>
                 <span className="today-red">
                   <img src="./../images/icon-down.svg"></img>19%{" "}
                 </span>
               </div>
-            </div>
-            <div className="small-card">
-              <div className="sc-fr">
+            </article>
+            <article className="small-card">
+              <div className="sc-inside-first-row">
                 <span id="category"> Total views</span>
                 <p className="number-today">1407</p>
               </div>
-              <div className="sc-sr">
+              <div className="sc-inside-second-row">
                 <img id="icons" src="./../images/icon-youtube.svg"></img>
                 <span className="today-red">
                   <img src="./../images/icon-down.svg"></img>12%{" "}
                 </span>
               </div>
-            </div>
+            </article>
           </div>
         </div>
-      </article>
+      </section>
     </div>
   );
 };

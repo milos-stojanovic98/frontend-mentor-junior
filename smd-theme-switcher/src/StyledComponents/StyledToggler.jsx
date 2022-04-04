@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const StyledToggleButton = styled.button`
-  margin-left: 0.1rem;
-  height: 1.3rem;
-  width: 1.3rem;
+  margin: 0.1rem;
+  height: 1.4rem;
+  width: 1.4rem;
   border-radius: 50%;
   border: none;
   background-color: ${(props) => props.backgroundColor};
@@ -16,7 +16,7 @@ export const StyledToggleButton = styled.button`
 
 export const StyledTogglerDiv = styled.div`
   display: flex;
-  justify-content: flex-start;
+  justify-content: ${(props) => props.justifycontent};
   align-items: center;
   margin-top: 1rem;
   height: 1.6rem;

@@ -64,6 +64,7 @@ const App = () => {
               Dark Mode
             </StyledTogglerLabel>
             <StyledTogglerDiv
+              justifycontent={isDarkTheme ? "flex-start" : "flex-end"}
               background={
                 isDarkTheme
                   ? "linear-gradient(var(--dark-toggle))"
@@ -72,6 +73,7 @@ const App = () => {
             >
               {" "}
               <StyledToggleButton
+                onClick={themeToggler}
                 backgroundColor={
                   isDarkTheme
                     ? "var(--dt-top-background)"

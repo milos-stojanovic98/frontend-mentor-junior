@@ -9,6 +9,10 @@ export const StyledSmallCard = styled.article`
   align-items: center;
   background-color: ${(props) => props.backgroundColor};
   border-radius: 5px;
+  &:hover {
+    cursor: pointer;
+    filter: brightness(150%);
+  }
 `;
 export const StyledBigCard = styled.article`
   margin: 0rem 1rem 0rem 1rem;
@@ -22,4 +26,8 @@ export const StyledBigCard = styled.article`
   border-radius: 5px;
   transform: translateY(-105px);
   position: relative;
+  &:hover {
+    cursor: pointer;
+    filter: brightness(150%);
+  }
 `;

@@ -48,16 +48,6 @@
   background-color: var(--dt-background);
 }
 /* Navbar */
-.navbar {
-  height: 35vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--dt-top-background);
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
 .nav-content {
   display: flex;
   flex-direction: row;
@@ -68,9 +58,6 @@
   height: 100%;
   width: 50%;
   padding-top: 2rem;
-}
-.nav-left-side h1 {
-  color: var(--dt-text-white);
 }
 .nav-left-side p {
   color: var(--dt-text-blue);
@@ -208,9 +195,6 @@ header {
   height: 3rem;
   width: 81vw;
   margin-bottom: 1.5rem;
-}
-header h1 {
-  color: var(--dt-text-white);
 }
 .ov-cards-container {
   height: 100%;

@@ -1,13 +1,15 @@
-import { useState } from "react";
+import { StyledNavbar } from "./StyledComponents/StyledNavbar";
+import { StyledH1 } from "./StyledComponents/StyledH1";
 import "./styles.css";
+
 const App = () => {
   return (
     <div className="container">
       {/*navbar*/}
-      <nav className="navbar">
+      <StyledNavbar>
         <div className="nav-content">
           <div className="nav-left-side">
-            <h1> Social Media Dashboard</h1>
+            <StyledH1> Social Media Dashboard</StyledH1>
             <p> Total Followers: 23.004</p>
           </div>
           <div className="nav-right-side">
@@ -20,7 +22,7 @@ const App = () => {
             </div>
           </div>
         </div>
-      </nav>
+      </StyledNavbar>
       {/*big cards*/}
       <section className="big-cards-container">
         <article id="border-blue" className="big-card">
@@ -85,7 +87,7 @@ const App = () => {
       <section className="overview-container">
         <div className="ov-cards-container">
           <header>
-            <h1> Overview today</h1>
+            <StyledH1> Overview today</StyledH1>
           </header>
           <div className="small-cards-fr">
             <article className="small-card">

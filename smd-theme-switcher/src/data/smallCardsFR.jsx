@@ -1,0 +1,38 @@
+export const smallCardsFR = [
+  {
+    id: 1,
+    category: "Page views",
+    icon: "./../images/icon-facebook.svg",
+    numOf: "87",
+    percentage: "3",
+    smallIcon: "./../images/icon-up.svg",
+    todayColor: "today",
+  },
+  {
+    id: 2,
+    category: "Likes",
+    icon: "./../images/icon-facebook.svg",
+    numOf: "52",
+    percentage: "2",
+    smallIcon: "./../images/icon-down.svg",
+    todayColor: "today-red",
+  },
+  {
+    id: 1,
+    category: "Likes",
+    icon: "./../images/icon-instagram.svg",
+    numOf: "5462",
+    percentage: "2257",
+    smallIcon: "./../images/icon-up.svg",
+    todayColor: "today",
+  },
+  {
+    id: 1,
+    category: "Profile views",
+    icon: "./../images/icon-facebook.svg",
+    numOf: "52k",
+    percentage: "1375",
+    smallIcon: "./../images/icon-up.svg",
+    todayColor: "today",
+  },
+];

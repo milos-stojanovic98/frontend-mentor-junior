@@ -14,6 +14,8 @@ import {
 import "./styles.css";
 import { useGlobalColorsContext } from "./colorsContext";
 import BigCard from "./components/BigCard";
+import SmallCardFR from "./components/SmallCardFR";
+import SmallCardSR from "./components/SmallCardSR";
 
 const App = () => {
   const {
@@ -74,169 +76,10 @@ const App = () => {
             </StyledH1>
           </header>
           <div className="small-cards-fr">
-            <StyledSmallCard
-              backgroundColor={isDarkTheme ? dtCardBgr : ltCardBgr}
-            >
-              <div className="sc-inside-first-row">
-                <Category color={isDarkTheme ? dtTextBlue : ltDarkBlueText}>
-                  Page views
-                </Category>
-                <NumberToday
-                  color={isDarkTheme ? dtWhiteText : ltVeryDarkBlueText}
-                >
-                  87
-                </NumberToday>
-              </div>
-              <div className="sc-inside-second-row">
-                <img id="icons" src="./../images/icon-facebook.svg"></img>
-                <span className="today">
-                  <img src="./../images/icon-up.svg"></img>3%
-                </span>
-              </div>
-            </StyledSmallCard>
-            <StyledSmallCard
-              backgroundColor={isDarkTheme ? dtCardBgr : ltCardBgr}
-            >
-              <div className="sc-inside-first-row">
-                <Category color={isDarkTheme ? dtTextBlue : ltDarkBlueText}>
-                  Likes
-                </Category>
-                <NumberToday
-                  color={isDarkTheme ? dtWhiteText : ltVeryDarkBlueText}
-                >
-                  52
-                </NumberToday>
-              </div>
-              <div className="sc-inside-second-row">
-                <img id="icons" src="./../images/icon-facebook.svg"></img>
-                <span className="today-red">
-                  <img src="./../images/icon-down.svg"></img>2%{" "}
-                </span>
-              </div>
-            </StyledSmallCard>
-            <StyledSmallCard
-              backgroundColor={isDarkTheme ? dtCardBgr : ltCardBgr}
-            >
-              <div className="sc-inside-first-row">
-                <Category color={isDarkTheme ? dtTextBlue : ltDarkBlueText}>
-                  Likes
-                </Category>
-                <NumberToday
-                  color={isDarkTheme ? dtWhiteText : ltVeryDarkBlueText}
-                >
-                  5462
-                </NumberToday>
-              </div>
-              <div className="sc-inside-second-row">
-                <img id="icons" src="./../images/icon-instagram.svg"></img>
-
-                <span className="today">
-                  <img src="./../images/icon-up.svg"></img>2257%
-                </span>
-              </div>
-            </StyledSmallCard>
-            <StyledSmallCard
-              backgroundColor={isDarkTheme ? dtCardBgr : ltCardBgr}
-            >
-              <div className="sc-inside-first-row">
-                <Category color={isDarkTheme ? dtTextBlue : ltDarkBlueText}>
-                  Profile views
-                </Category>
-                <NumberToday
-                  color={isDarkTheme ? dtWhiteText : ltVeryDarkBlueText}
-                >
-                  52k
-                </NumberToday>
-              </div>
-              <div className="sc-inside-second-row">
-                <img id="icons" src="./../images/icon-facebook.svg"></img>
-                <span className="today">
-                  <img src="./../images/icon-up.svg"></img>1375%
-                </span>
-              </div>
-            </StyledSmallCard>
+            <SmallCardFR />
           </div>
           <div className="small-cards-sr">
-            <StyledSmallCard
-              backgroundColor={isDarkTheme ? dtCardBgr : ltCardBgr}
-            >
-              <div className="sc-inside-first-row">
-                <Category color={isDarkTheme ? dtTextBlue : ltDarkBlueText}>
-                  Retweets
-                </Category>
-                <NumberToday
-                  color={isDarkTheme ? dtWhiteText : ltVeryDarkBlueText}
-                >
-                  117
-                </NumberToday>
-              </div>
-              <div className="sc-inside-second-row">
-                <img id="icons" src="./../images/icon-twitter.svg"></img>
-                <span className="today">
-                  <img src="./../images/icon-up.svg"></img>303%
-                </span>
-              </div>
-            </StyledSmallCard>
-            <StyledSmallCard
-              backgroundColor={isDarkTheme ? dtCardBgr : ltCardBgr}
-            >
-              <div className="sc-inside-first-row">
-                <Category color={isDarkTheme ? dtTextBlue : ltDarkBlueText}>
-                  Likes
-                </Category>
-                <NumberToday
-                  color={isDarkTheme ? dtWhiteText : ltVeryDarkBlueText}
-                >
-                  507
-                </NumberToday>
-              </div>
-              <div className="sc-inside-second-row">
-                <img id="icons" src="./../images/icon-twitter.svg"></img>
-                <span className="today">
-                  <img src="./../images/icon-up.svg"></img>553%
-                </span>
-              </div>
-            </StyledSmallCard>
-            <StyledSmallCard
-              backgroundColor={isDarkTheme ? dtCardBgr : ltCardBgr}
-            >
-              <div className="sc-inside-first-row">
-                <Category color={isDarkTheme ? dtTextBlue : ltDarkBlueText}>
-                  Likes
-                </Category>
-                <NumberToday
-                  color={isDarkTheme ? dtWhiteText : ltVeryDarkBlueText}
-                >
-                  107
-                </NumberToday>
-              </div>
-              <div className="sc-inside-second-row">
-                <img id="icons" src="./../images/icon-youtube.svg"></img>
-                <span className="today-red">
-                  <img src="./../images/icon-down.svg"></img>19%
-                </span>
-              </div>
-            </StyledSmallCard>
-            <StyledSmallCard
-              backgroundColor={isDarkTheme ? dtCardBgr : ltCardBgr}
-            >
-              <div className="sc-inside-first-row">
-                <Category color={isDarkTheme ? dtTextBlue : ltDarkBlueText}>
-                  Total Views
-                </Category>
-                <NumberToday
-                  color={isDarkTheme ? dtWhiteText : ltVeryDarkBlueText}
-                >
-                  1407
-                </NumberToday>
-              </div>
-              <div className="sc-inside-second-row">
-                <img id="icons" src="./../images/icon-youtube.svg"></img>
-                <span className="today-red">
-                  <img src="./../images/icon-down.svg"></img>12%
-                </span>
-              </div>
-            </StyledSmallCard>
+            <SmallCardSR />
           </div>
         </div>
       </section>

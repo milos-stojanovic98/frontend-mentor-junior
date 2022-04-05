@@ -10,7 +10,6 @@ export const StyledToggleButton = styled.button`
 
   &:hover {
     cursor: pointer;
-    filter: brightness(150%);
   }
 `;
 

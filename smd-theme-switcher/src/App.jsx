@@ -73,17 +73,16 @@ const App = () => {
             <img src="./../images/icon-facebook.svg"></img>
             <StyledTexts color={isDarkTheme ? dtTextBlue : ltDarkBlueText}>
               @nathanf
-            </StyledTexts>{" "}
+            </StyledTexts>
           </div>
           <div className="bc-second-row">
             <NoF color={isDarkTheme ? dtWhiteText : ltVeryDarkBlueText}>
-              1987{" "}
+              1987
             </NoF>
             <h4 className="followers"> Followers </h4>
           </div>
           <span className="today">
-            {" "}
-            <img src="./../images/icon-up.svg"></img>12 Today{" "}
+            <img src="./../images/icon-up.svg"></img>12 Today
           </span>
         </StyledBigCard>
         <StyledBigCard
@@ -91,22 +90,19 @@ const App = () => {
           id="border-blue"
         >
           <div className="bc-first-row">
-            {" "}
             <img src="./../images/icon-twitter.svg"></img>
             <StyledTexts color={isDarkTheme ? dtTextBlue : ltDarkBlueText}>
               @nathanf
-            </StyledTexts>{" "}
+            </StyledTexts>
           </div>
           <div className="bc-second-row">
             <NoF color={isDarkTheme ? dtWhiteText : ltVeryDarkBlueText}>
-              {" "}
-              1044{" "}
+              1044
             </NoF>
             <h4 className="followers"> Followers </h4>
           </div>
           <span className="today">
-            {" "}
-            <img src="./../images/icon-up.svg"></img> 99 Today{" "}
+            <img src="./../images/icon-up.svg"></img> 99 Today
           </span>
         </StyledBigCard>
         <StyledBigCard
@@ -117,7 +113,7 @@ const App = () => {
             <img src="./../images/icon-instagram.svg"></img>
             <StyledTexts color={isDarkTheme ? dtTextBlue : ltDarkBlueText}>
               @realnathanf
-            </StyledTexts>{" "}
+            </StyledTexts>
           </div>
           <div className="bc-second-row">
             <NoF color={isDarkTheme ? dtWhiteText : ltVeryDarkBlueText}>
@@ -146,7 +142,7 @@ const App = () => {
             <h4 className="followers"> Subscribers </h4>
           </div>
           <span className="today-red">
-            <img src="./../images/icon-down.svg"></img> 144 Today{" "}
+            <img src="./../images/icon-down.svg"></img> 144 Today
           </span>
         </StyledBigCard>
       </section>
@@ -175,7 +171,7 @@ const App = () => {
               <div className="sc-inside-second-row">
                 <img id="icons" src="./../images/icon-facebook.svg"></img>
                 <span className="today">
-                  <img src="./../images/icon-up.svg"></img> 3%{" "}
+                  <img src="./../images/icon-up.svg"></img>3%
                 </span>
               </div>
             </StyledSmallCard>
@@ -216,7 +212,7 @@ const App = () => {
                 <img id="icons" src="./../images/icon-instagram.svg"></img>
 
                 <span className="today">
-                  <img src="./../images/icon-up.svg"></img>2257%{" "}
+                  <img src="./../images/icon-up.svg"></img>2257%
                 </span>
               </div>
             </StyledSmallCard>
@@ -236,7 +232,7 @@ const App = () => {
               <div className="sc-inside-second-row">
                 <img id="icons" src="./../images/icon-facebook.svg"></img>
                 <span className="today">
-                  <img src="./../images/icon-up.svg"></img>1375%{" "}
+                  <img src="./../images/icon-up.svg"></img>1375%
                 </span>
               </div>
             </StyledSmallCard>
@@ -258,7 +254,7 @@ const App = () => {
               <div className="sc-inside-second-row">
                 <img id="icons" src="./../images/icon-twitter.svg"></img>
                 <span className="today">
-                  <img src="./../images/icon-up.svg"></img>303%{" "}
+                  <img src="./../images/icon-up.svg"></img>303%
                 </span>
               </div>
             </StyledSmallCard>
@@ -278,7 +274,7 @@ const App = () => {
               <div className="sc-inside-second-row">
                 <img id="icons" src="./../images/icon-twitter.svg"></img>
                 <span className="today">
-                  <img src="./../images/icon-up.svg"></img>553%{" "}
+                  <img src="./../images/icon-up.svg"></img>553%
                 </span>
               </div>
             </StyledSmallCard>

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { StyledNavbar, StyledH1 } from "./StyledComponents/StyledNavbar";
 import { StyledContainer } from "./StyledComponents/StyledContainer";
 import { StyledBigCard, StyledSmallCard } from "./StyledComponents/StyledCards";
@@ -15,24 +14,25 @@ import {
   TotalFollowers,
 } from "./StyledComponents/StyledTexts";
 import "./styles.css";
-
-const dtBgr = "var(--dt-background)";
-const ltBgr = "var(--lt-background)";
-const dtCardBgr = "var(--dt-card-background)";
-const ltCardBgr = "var(--lt-card-background)";
-const dtWhiteText = "var(--dt-text-white)";
-const dtTextBlue = "var(--dt-text-blue)";
-const ltDarkBlueText = "var(--lt-text-dark-blue)";
-const ltVeryDarkBlueText = "var(--lt-text-very-dark-blue)";
-const ltToggle = "var(--light-toggle)";
-const dtTopBgr = "var(--dt-top-background)";
-const dtToggle = "linear-gradient(var(--dark-toggle))";
+import { useGlobalColorsContext } from "./colorsContext";
+import BigCard from "./components/BigCard";
 
 const App = () => {
-  const [isDarkTheme, setIsDarkTheme] = useState(true);
-  const themeToggler = () => {
-    setIsDarkTheme(!isDarkTheme);
-  };
+  const {
+    isDarkTheme,
+    themeToggler,
+    dtBgr,
+    ltBgr,
+    dtCardBgr,
+    ltCardBgr,
+    dtWhiteText,
+    dtTextBlue,
+    ltDarkBlueText,
+    ltVeryDarkBlueText,
+    ltToggle,
+    dtTopBgr,
+    dtToggle,
+  } = useGlobalColorsContext();
 
   return (
     <StyledContainer backgroundColor={isDarkTheme ? dtBgr : ltBgr}>
@@ -65,26 +65,7 @@ const App = () => {
       </StyledNavbar>
       {/*big cards*/}
       <section className="big-cards-container">
-        <StyledBigCard
-          backgroundColor={isDarkTheme ? dtCardBgr : ltCardBgr}
-          id="border-blue"
-        >
-          <div className="bc-first-row">
-            <img src="./../images/icon-facebook.svg"></img>
-            <StyledTexts color={isDarkTheme ? dtTextBlue : ltDarkBlueText}>
-              @nathanf
-            </StyledTexts>
-          </div>
-          <div className="bc-second-row">
-            <NoF color={isDarkTheme ? dtWhiteText : ltVeryDarkBlueText}>
-              1987
-            </NoF>
-            <h4 className="followers"> Followers </h4>
-          </div>
-          <span className="today">
-            <img src="./../images/icon-up.svg"></img>12 Today
-          </span>
-        </StyledBigCard>
+        <BigCard />
         <StyledBigCard
           backgroundColor={isDarkTheme ? dtCardBgr : ltCardBgr}
           id="border-blue"

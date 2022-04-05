@@ -2,6 +2,7 @@ import React from "react";
 import { StyledBigCard } from "../StyledComponents/StyledCards";
 import { StyledTexts, NoF } from "../StyledComponents/StyledTexts";
 import { useGlobalColorsContext } from "../colorsContext";
+import { bigCards } from "../data/bigCards";
 
 const BigCard = () => {
   const {
@@ -15,24 +16,45 @@ const BigCard = () => {
   } = useGlobalColorsContext();
 
   return (
-    <StyledBigCard
-      backgroundColor={isDarkTheme ? dtCardBgr : ltCardBgr}
-      id="border-blue"
-    >
-      <div className="bc-first-row">
-        <img src="./../images/icon-facebook.svg"></img>
-        <StyledTexts color={isDarkTheme ? dtTextBlue : ltDarkBlueText}>
-          @nathanf
-        </StyledTexts>
-      </div>
-      <div className="bc-second-row">
-        <NoF color={isDarkTheme ? dtWhiteText : ltVeryDarkBlueText}>1987</NoF>
-        <h4 className="followers"> Followers </h4>
-      </div>
-      <span className="today">
-        <img src="./../images/icon-up.svg"></img>12 Today
-      </span>
-    </StyledBigCard>
+    <>
+      {bigCards.map((card) => {
+        const {
+          id,
+          icon,
+          name,
+          followers,
+          today,
+          smallIcon,
+          styleID,
+          todayColor,
+          subscriber,
+        } = card;
+        return (
+          <StyledBigCard
+            key={id}
+            backgroundColor={isDarkTheme ? dtCardBgr : ltCardBgr}
+            id={styleID}
+          >
+            <div className="bc-first-row">
+              <img src={icon}></img>
+              <StyledTexts color={isDarkTheme ? dtTextBlue : ltDarkBlueText}>
+                {name}
+              </StyledTexts>
+            </div>
+            <div className="bc-second-row">
+              <NoF color={isDarkTheme ? dtWhiteText : ltVeryDarkBlueText}>
+                {followers}
+              </NoF>
+              <h4 className="followers"> {subscriber} </h4>
+            </div>
+            <span className={todayColor}>
+              <img src={smallIcon}></img>
+              {today} Today
+            </span>
+          </StyledBigCard>
+        );
+      })}
+    </>
   );
 };
 

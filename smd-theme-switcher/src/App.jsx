@@ -66,66 +66,6 @@ const App = () => {
       {/*big cards*/}
       <section className="big-cards-container">
         <BigCard />
-        <StyledBigCard
-          backgroundColor={isDarkTheme ? dtCardBgr : ltCardBgr}
-          id="border-blue"
-        >
-          <div className="bc-first-row">
-            <img src="./../images/icon-twitter.svg"></img>
-            <StyledTexts color={isDarkTheme ? dtTextBlue : ltDarkBlueText}>
-              @nathanf
-            </StyledTexts>
-          </div>
-          <div className="bc-second-row">
-            <NoF color={isDarkTheme ? dtWhiteText : ltVeryDarkBlueText}>
-              1044
-            </NoF>
-            <h4 className="followers"> Followers </h4>
-          </div>
-          <span className="today">
-            <img src="./../images/icon-up.svg"></img> 99 Today
-          </span>
-        </StyledBigCard>
-        <StyledBigCard
-          backgroundColor={isDarkTheme ? dtCardBgr : ltCardBgr}
-          id="insta-border"
-        >
-          <div className="bc-first-row">
-            <img src="./../images/icon-instagram.svg"></img>
-            <StyledTexts color={isDarkTheme ? dtTextBlue : ltDarkBlueText}>
-              @realnathanf
-            </StyledTexts>
-          </div>
-          <div className="bc-second-row">
-            <NoF color={isDarkTheme ? dtWhiteText : ltVeryDarkBlueText}>
-              11k
-            </NoF>
-            <h4 className="followers"> Followers </h4>
-          </div>
-          <span className="today">
-            <img src="./../images/icon-up.svg"></img> 1099 Today
-          </span>
-        </StyledBigCard>
-        <StyledBigCard
-          backgroundColor={isDarkTheme ? dtCardBgr : ltCardBgr}
-          id="border-red"
-        >
-          <div className="bc-first-row">
-            <img src="./../images/icon-youtube.svg"></img>
-            <StyledTexts color={isDarkTheme ? dtTextBlue : ltDarkBlueText}>
-              Nathan F
-            </StyledTexts>
-          </div>
-          <div className="bc-second-row">
-            <NoF color={isDarkTheme ? dtWhiteText : ltVeryDarkBlueText}>
-              8239
-            </NoF>
-            <h4 className="followers"> Subscribers </h4>
-          </div>
-          <span className="today-red">
-            <img src="./../images/icon-down.svg"></img> 144 Today
-          </span>
-        </StyledBigCard>
       </section>
       {/*small cards*/}
       <section className="overview-container">

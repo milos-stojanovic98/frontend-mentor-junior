@@ -35,7 +35,7 @@ const App = () => {
   return (
     <StyledContainer backgroundColor={isDarkTheme ? dtBgr : ltBgr}>
       {/*navbar*/}
-      <StyledNavbar backgroundColor={isDarkTheme ? dtBgr : ltBgr}>
+      <StyledNavbar backgroundColor={isDarkTheme ? dtTopBgr : ltBgr}>
         <div className="nav-content">
           <div className="nav-left-side">
             <StyledH1 color={isDarkTheme ? dtWhiteText : ltVeryDarkBlueText}>

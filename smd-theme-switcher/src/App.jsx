@@ -1,14 +1,12 @@
 import { StyledNavbar, StyledH1 } from "./StyledComponents/StyledNavbar";
 import { StyledContainer } from "./StyledComponents/StyledContainer";
-import { StyledBigCard, StyledSmallCard } from "./StyledComponents/StyledCards";
+import { StyledSmallCard } from "./StyledComponents/StyledCards";
 import {
   StyledToggleButton,
   StyledTogglerDiv,
   StyledTogglerLabel,
 } from "./StyledComponents/StyledToggler";
 import {
-  StyledTexts,
-  NoF,
   Category,
   NumberToday,
   TotalFollowers,

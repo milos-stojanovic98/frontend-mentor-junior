@@ -40,8 +40,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  height: 60%;
-  width: 80%;
+  height: 60vh;
+  width: 80vw;
 }
 /* First card */
 .big-div {
@@ -102,97 +102,79 @@
   font-weight: 400;
 }
 
-/* first row */
+/* right side */
 .section-container {
-  display: flex;
-  flex-direction: column;
   height: 100%;
   width: 75%;
-}
-.top-row {
-  display: flex;
-  flex-direction: row;
-  height: 50%;
-  width: 100%;
-  margin-bottom: 1rem;
-}
-.bottom-row {
-  display: flex;
-  flex-direction: row;
-  height: 50%;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  gap: 1rem;
 }
 .first {
   height: 100%;
-  width: 33%;
+  width: 100%;
   display: flex;
   align-items: flex-end;
   background-image: url("./images/icon-work.svg");
   background-repeat: no-repeat;
   background-position: top right;
   background-color: var(--light-red-work);
-  margin-right: 1.5rem;
   border-radius: 0.8rem;
 }
 .second {
   height: 100%;
-  width: 33%;
+  width: 100%;
   display: flex;
   align-items: flex-end;
   background-image: url("./images/icon-play.svg");
   background-repeat: no-repeat;
   background-position: top right;
   background-color: var(--soft-blue-play);
-  margin-right: 1.5rem;
   border-radius: 0.8rem;
 }
 .third {
   height: 100%;
-  width: 33%;
+  width: 100%;
   display: flex;
   align-items: flex-end;
   background-image: url("./images/icon-study.svg");
   background-repeat: no-repeat;
   background-position: top right;
   background-color: var(--light-red-study);
-  margin-right: 1.5rem;
   border-radius: 0.8rem;
 }
 /* Second row */
 .fourth {
   height: 100%;
-  width: 33%;
+  width: 100%;
   display: flex;
   align-items: flex-end;
   background-image: url("./images/icon-exercise.svg");
   background-repeat: no-repeat;
   background-position: top right;
   background-color: var(--lime-green-exercise);
-  margin-right: 1.5rem;
   border-radius: 0.8rem;
 }
 .fifth {
   height: 100%;
-  width: 33%;
+  width: 100%;
   display: flex;
   align-items: flex-end;
   background-image: url("./images/icon-social.svg");
   background-repeat: no-repeat;
   background-position: top right;
   background-color: var(--violet-social);
-  margin-right: 1.5rem;
   border-radius: 0.8rem;
 }
 .sixth {
   height: 100%;
-  width: 33%;
+  width: 100%;
   display: flex;
   align-items: flex-end;
   background-image: url("./images/icon-self-care.svg");
   background-repeat: no-repeat;
   background-position: top right;
   background-color: var(--soft-orange-self-care);
-  margin-right: 1.5rem;
   border-radius: 0.8rem;
 }
 /* Inner card styles */

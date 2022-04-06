@@ -1,7 +1,9 @@
 [
   {
     "id": 1,
+    "className": "first",
     "title": "Work",
+    "name": "work",
     "timeframes": {
       "daily": {
         "current": 5,
@@ -19,6 +21,8 @@
   },
   {
     "id": 2,
+    "className": "second",
+    "name": "play",
     "title": "Play",
     "timeframes": {
       "daily": {
@@ -37,6 +41,8 @@
   },
   {
     "id": 3,
+    "className": "third",
+    "name": "study",
     "title": "Study",
     "timeframes": {
       "daily": {
@@ -55,6 +61,8 @@
   },
   {
     "id": 4,
+    "className": "fourth",
+    "name": "exercise",
     "title": "Exercise",
     "timeframes": {
       "daily": {
@@ -73,6 +81,8 @@
   },
   {
     "id": 5,
+    "className": "fifth",
+    "name": "social",
     "title": "Social",
     "timeframes": {
       "daily": {
@@ -91,6 +101,8 @@
   },
   {
     "id": 6,
+    "className": "sixth",
+    "name": "self-care",
     "title": "Self Care",
     "timeframes": {
       "daily": {

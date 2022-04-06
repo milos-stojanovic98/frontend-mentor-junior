@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./index.css";
+import "./styles/index.css";
 import SingleCard from "./Components/SingleCard";
 import data from "./data/data.json";
 
@@ -49,24 +49,21 @@ const App = () => {
           <section className="menu">
             <button
               type="click"
-              id="buttons"
-              className="daily-button"
+              id={buttons.dailyBtn ? "button-active" : "buttons"}
               onClick={(e) => handleDaily(e)}
             >
               Daily{" "}
             </button>
             <button
               type="click"
-              id="buttons"
-              className="weekly-button"
+              id={buttons.weeklyBtn ? "button-active" : "buttons"}
               onClick={(e) => handleWeekly(e)}
             >
               Weekly
             </button>
             <button
               type="click"
-              id="buttons"
-              className="monthly-button"
+              id={buttons.monthlyBtn ? "button-active" : "buttons"}
               onClick={(e) => handleMonthly(e)}
             >
               Monthly

@@ -71,13 +71,20 @@
 #buttons {
   background: none;
   border: none;
-  color: var(--pale-blue);
+  color: var(--desaturated-blue);
   font-size: 0.8rem;
   font-weight: 400;
 }
 #buttons:hover {
   color: white;
   cursor: pointer;
+}
+#button-active {
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 0.8rem;
+  font-weight: 400;
 }
 .image-container {
   width: 100%;
